@@ -15,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/hist" element={<HistMenu />} />
+            <Route path="/pyramid" element={<HistMenu />} />
             <Route path="/blog/*" element={<BlogApp />} />
             <Route path="/users/*" element={<UserApp />} />
           </Routes>
@@ -29,8 +30,7 @@ function Home() {
     <>
       <h1>Welcome!</h1>
       <p>
-        Check out the <Link to="/blog">blog</Link> or the{" "}
-        <Link to="users">users</Link> section
+        Check out the <Link to="/hist">Pyramid</Link> Page.
       </p>
     </>
   );
