@@ -20,7 +20,6 @@ const drawerWidth = 240;
 const navItems = [
   { item: "Home", link: "./" },
   { item: "Hist", link: "./hist" },
-  { item: "About", link: "./about" },
   { item: "GitHub", link: "https://github.com/Shirashoji" },
 ];
 
