@@ -20,7 +20,10 @@ const drawerWidth = 240;
 const navItems = [
   { item: "Home", link: "./" },
   { item: "Hist", link: "./hist" },
-  { item: "GitHub", link: "https://github.com/Shirashoji" },
+  {
+    item: "GitHub",
+    link: "https://github.com/Shirashoji/chofu-population-viz",
+  },
 ];
 
 function Navigation(props) {
