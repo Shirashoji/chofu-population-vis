@@ -19,7 +19,9 @@ import Button from "@mui/material/Button";
 const drawerWidth = 240;
 const navItems = [
   { item: "Home", link: "./" },
-  { item: "Hist", link: "./hist" },
+  { item: "Map", link: "./map" },
+  { item: "Filter", link: "./filter" },
+  { item: "About", link: "./about" },
   {
     item: "GitHub",
     link: "https://github.com/Shirashoji/chofu-population-viz",

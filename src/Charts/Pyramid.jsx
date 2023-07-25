@@ -1,5 +1,7 @@
 import * as React from "react";
+import { useEffect, useState } from "react";
 import * as d3 from "d3";
+import { select } from "d3-selection";
 
 export default function Pyramid(props) {
   const { town, data } = props;
@@ -10,8 +12,8 @@ export default function Pyramid(props) {
   // const title = `${town}の人口ピラミッド`;
   const populationData = data.filter((item) => item.town === town)[0].data;
 
-  const displayWidth = 950;
-  const displayHeight = 700;
+  const displayWidth = 700;
+  const displayHeight = displayWidth * 0.9;
   const centerSlid = 80;
   const margin = { top: 20, right: 60, bottom: 55, left: 60 };
   const scheme = d3.scaleOrdinal(d3.schemeTableau10);
@@ -46,11 +48,17 @@ export default function Pyramid(props) {
                   (width + centerSlid) / 2 + xScale(d)
                 }, 0)`}
               >
-                <line x1="0" y1="0" x2="0" y2="10" stroke={infoCol} />
+                <line
+                  x1="0"
+                  y1="0"
+                  x2="0"
+                  y2={i % 2 == 0 ? 10 : 25}
+                  stroke={infoCol}
+                />
                 {/* ウインドウサイズを変更に対応させる時にこの部分を文字幅に応じて縦書きにする */}
                 <text
                   x={0}
-                  y={20}
+                  y={i % 2 == 0 ? 20 : 35}
                   textAnchor="middle"
                   dominantBaseline="central"
                   fill={infoCol}
@@ -64,10 +72,16 @@ export default function Pyramid(props) {
                   (width - centerSlid) / 2 - xScale(d)
                 }, 0)`}
               >
-                <line x1="0" y1="0" x2="0" y2="10" stroke={infoCol} />
+                <line
+                  x1="0"
+                  y1="0"
+                  x2="0"
+                  y2={i % 2 == 0 ? 10 : 25}
+                  stroke={infoCol}
+                />
                 <text
                   x={0}
-                  y={20}
+                  y={i % 2 == 0 ? 20 : 35}
                   textAnchor="middle"
                   dominantBaseline="central"
                   fill={infoCol}

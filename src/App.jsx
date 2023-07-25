@@ -2,7 +2,8 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Navigation from "./components/Navigation";
-import HistMenu from "./components/HistMenu";
+import FilterMenu from "./components/FilterMenu";
+import MapMenu from "./components/MapMenu";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -13,43 +14,13 @@ function App() {
       <Navigation>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/hist" element={<HistMenu />} />
-            <Route path="/pyramid" element={<HistMenu />} />
-            <Route path="/blog/*" element={<BlogApp />} />
-            <Route path="/users/*" element={<UserApp />} />
+            <Route path="/" element={<MapMenu />} />
+            <Route path="/map" element={<MapMenu />} />
+            <Route path="/filter" element={<FilterMenu />} />
           </Routes>
         </BrowserRouter>
       </Navigation>
     </>
-  );
-}
-
-function Home() {
-  return (
-    <>
-      <h1>Welcome!</h1>
-      <p>
-        Check out the <Link to="/hist">Pyramid</Link> Page.
-      </p>
-    </>
-  );
-}
-
-function BlogApp() {
-  return (
-    <Routes>
-      <Route index element={<h1>Blog Index</h1>} />
-      <Route path="posts" element={<h1>Blog Posts</h1>} />
-    </Routes>
-  );
-}
-
-function UserApp() {
-  return (
-    <Routes>
-      <Route index element={<h1>Users Index</h1>} />
-    </Routes>
   );
 }
 
