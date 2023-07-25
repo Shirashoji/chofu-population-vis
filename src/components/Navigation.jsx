@@ -21,7 +21,7 @@ const navItems = [
   { item: "Home", link: "./" },
   { item: "Map", link: "./map" },
   { item: "Filter", link: "./filter" },
-  { item: "About", link: "./about" },
+  // { item: "About", link: "./about" },
   {
     item: "GitHub",
     link: "https://github.com/Shirashoji/chofu-population-viz",
