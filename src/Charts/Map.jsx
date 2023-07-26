@@ -11,7 +11,7 @@ export default function Map(props) {
   const projection = geoMercator().fitExtent(
     [
       [0, 0],
-      [width * 0.9, height * 0.9],
+      [width, height * 0.9],
     ],
     geojson
   );
@@ -25,7 +25,8 @@ export default function Map(props) {
 
   return (
     <div className="Map">
-      <svg width={width} height={height}>
+      {/* <svg width={width} height={height}> */}
+      <svg viewBox={`0 0 ${width} ${height}`}>
         <g className="geojson-layer">
           {geojson.features.map((d, i) => (
             <path
@@ -62,11 +63,7 @@ export default function Map(props) {
             />
           ))}
         </g>
-        <text
-          x={width / 2 - width * 0.08}
-          y={height * 0.98}
-          textAnchor="middle"
-        >
+        <text x={width / 2} y={height * 0.98} textAnchor="middle">
           {town}
         </text>
       </svg>

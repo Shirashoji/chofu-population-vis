@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.6",
     "@mui/styled-engine-sc": "^5.12.0",
+    "@mui/x-charts": "^6.0.0-alpha.4",
     "@observablehq/plot": "^0.6.9",
     "d3": "^7.8.5",
     "d3-geo": "^3.1.0",

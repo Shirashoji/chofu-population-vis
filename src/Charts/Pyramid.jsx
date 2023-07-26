@@ -12,10 +12,15 @@ export default function Pyramid(props) {
   // const title = `${town}の人口ピラミッド`;
   const populationData = data.filter((item) => item.town === town)[0].data;
 
-  const displayWidth = 700;
+  const displayWidth = 1000;
   const displayHeight = displayWidth * 0.9;
-  const centerSlid = 80;
-  const margin = { top: 20, right: 60, bottom: 55, left: 60 };
+  const centerSlid = displayWidth / 9;
+  const margin = {
+    top: displayWidth / 12,
+    right: displayWidth / 13,
+    bottom: displayWidth / 10,
+    left: displayWidth / 14,
+  };
   const scheme = d3.scaleOrdinal(d3.schemeTableau10);
   const width = displayWidth - margin.left - margin.right;
   const height = displayHeight - margin.top - margin.bottom;
@@ -198,10 +203,9 @@ export default function Pyramid(props) {
   return (
     <>
       <svg
-        width={displayWidth}
-        height={displayHeight}
+        viewBox={`0 0 ${displayWidth} ${displayHeight}`}
         style={{
-          userSelect: "none",
+          userSelect: "none",          
         }}
       >
         <g transform={`translate(${margin.left}, ${margin.top})`}>

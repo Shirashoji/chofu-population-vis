@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useEffect } from "react";
+import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
@@ -44,7 +45,20 @@ export default function FilterMenu() {
             </Stack>
           </Grid>
           <Grid item xs="auto">
-            <Pyramid town={town} data={data} />
+            <Container
+              maxWidth="ms"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Box
+                sx={{
+                  width: "80vh",
+                  height: "80vh",
+                }}
+              >
+                <Pyramid town={town} data={data} />
+              </Box>
+            </Container>
           </Grid>
         </Grid>
       </Box>

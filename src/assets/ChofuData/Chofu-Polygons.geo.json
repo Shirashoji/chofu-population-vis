@@ -285,7 +285,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "name": "" },
+      "properties": { "name": "野水1丁目" },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
