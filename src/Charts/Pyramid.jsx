@@ -12,7 +12,7 @@ export default function Pyramid(props) {
   // const title = `${town}の人口ピラミッド`;
   const populationData = data.filter((item) => item.town === town)[0].data;
 
-  const displayWidth = 1000;
+  const displayWidth = 700;
   const displayHeight = displayWidth * 0.9;
   const centerSlid = displayWidth / 9;
   const margin = {
@@ -203,9 +203,11 @@ export default function Pyramid(props) {
   return (
     <>
       <svg
+        // width={displayWidth}
+        // height={displayHeight}
         viewBox={`0 0 ${displayWidth} ${displayHeight}`}
         style={{
-          userSelect: "none",          
+          userSelect: "none",
         }}
       >
         <g transform={`translate(${margin.left}, ${margin.top})`}>

@@ -40,69 +40,56 @@ export default function MapMenu() {
 
   return (
     <div className="App">
-      <Box>
-        <Grid container justifyContent="center" alignItems="center">
-          <Grid item xs="auto">
-            <Stack spacing={2} justifyContent="center" alignItems="center">
+      <Box
+        sx={{
+          width: "100vw",
+        }}
+      >
+        <Grid
+          container
+          spacing={2}
+          sx={{ p: 2 }}
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Grid item xs="auto" justifyContent="center" alignItems="center">
+            <Stack
+              spacing={2}
+              direction="column"
+              justifyContent="center"
+              alignItems="center"
+            >
               <Selections
                 options={years}
                 value={year}
                 setValue={setYear}
                 label="Select Year"
               />
-              <Container
-                maxWidth="ms"
-                justifyContent="center"
-                alignItems="center"
+              <Box
+                width="auto"
+                sx={{
+                  width: "35vw",
+                  maxWidth: "90vmin",
+                  maxHeight: "90vmin",
+                }}
               >
-                <Box
-                  sx={{
-                    width: "50vh",
-                    height: "50vh",
-                  }}
-                >
-                  <Map geojson={geojson} setName={setMouse} />
-                </Box>
-              </Container>
+                <Map geojson={geojson} setName={setMouse} />
+              </Box>
             </Stack>
           </Grid>
           <Grid item xs="auto">
-            <Container
-              maxWidth="ms"
-              justifyContent="center"
-              alignItems="center"
+            <Box
+              sx={{
+                width: "100vw",
+                maxWidth: "90vmin",
+                maxHeight: "90vmin",
+              }}
             >
-              <Box
-                sx={{
-                  width: "80vh",
-                  height: "80vh",
-                }}
-              >
-                <Pyramid town={town} data={data} />
-              </Box>
-            </Container>
+              <Pyramid town={town} data={data} />
+            </Box>
           </Grid>
         </Grid>
       </Box>
     </div>
   );
-
-  // return (
-  //   <React.Fragment>
-  //     <CssBaseline />
-  //     <Container fixed maxWidth="sm">
-  //       <Box
-  //         sx={{
-  //           width: 1000,
-  //           height: 300,
-  //           backgroundColor: "primary.dark",
-  //           "&:hover": {
-  //             backgroundColor: "primary.main",
-  //             opacity: [0.9, 0.8, 0.7],
-  //           },
-  //         }}
-  //       />
-  //     </Container>
-  //   </React.Fragment>
-  // );
 }

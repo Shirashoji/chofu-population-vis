@@ -26,8 +26,18 @@ export default function FilterMenu() {
 
   return (
     <div className="App">
-      <Box>
-        <Grid container spacing={10}>
+      <Box
+        sx={{
+          width: "100vw",
+        }}
+      >
+        <Grid
+          container
+          spacing={10}
+          sx={{ p: 2 }}
+          justifyContent="center"
+          alignItems="center"
+        >
           <Grid item xs="auto">
             <Stack spacing={2}>
               <Selections
@@ -52,8 +62,9 @@ export default function FilterMenu() {
             >
               <Box
                 sx={{
-                  width: "80vh",
-                  height: "80vh",
+                  width: "90vw",
+                  maxWidth: "90vmin",
+                  maxHeight: "90vmin",
                 }}
               >
                 <Pyramid town={town} data={data} />

@@ -35,11 +35,10 @@ function Navigation(props) {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        Chofu Population Viz
       </Typography>
       <Divider />
       <List>
@@ -116,7 +115,7 @@ function Navigation(props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box component="main" sx={{ p: 3 }}>
+      <Box component="main">
         <Toolbar />
         {props.children}
       </Box>
