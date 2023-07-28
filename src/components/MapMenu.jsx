@@ -68,7 +68,6 @@ export default function MapMenu() {
                   width: "150%",
                   maxWidth: "90vmin",
                   maxHeight: "90vmin",
-                  // border: "1px dashed grey",
                 }}
               >
                 <Map geojson={geojson} setName={setMouse} />

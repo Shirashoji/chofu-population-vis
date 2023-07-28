@@ -16,7 +16,6 @@ function App() {
             <Route path="/" element={<MapMenu />} />
             <Route path="/map" element={<MapMenu />} />
             <Route path="/filter" element={<FilterMenu />} />
-            {/* <Route path="/hist" element= /> */}
           </Routes>
         </BrowserRouter>
       </Navigation>
