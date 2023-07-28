@@ -47,10 +47,19 @@ export default function Map(props) {
               onMouseDown={(e) => {
                 if (click) {
                   select(click).attr("fill", "#eee");
+                  if (click !== e.target) {
+                    select(e.target).attr("fill", "#F00");
+                    setTown(d.properties.name);
+                    setClick(e.target);
+                  } else {
+                    select(click).attr("fill", "#000");
+                    setClick(null);
+                  }
+                } else {
+                  select(e.target).attr("fill", "#F00");
+                  setTown(d.properties.name);
+                  setClick(e.target);
                 }
-                select(e.target).attr("fill", "#F00");
-                setTown(d.properties.name);
-                setClick(e.target);
               }}
               onMouseOut={(e) => {
                 if (!click || town !== d.properties.name) {

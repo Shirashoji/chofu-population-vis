@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useEffect } from "react";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Selections from "./Selections.jsx";
@@ -9,7 +8,6 @@ import Map from "../Charts/Map.jsx";
 import Pyramid from "../Charts/Pyramid.jsx";
 import { fetchPopulation } from "../APIs/fetchPopulation.js";
 import geojson from "../assets/ChofuData/Chofu-Polygons.geo.json";
-import CssBaseline from "@mui/material/CssBaseline";
 
 const drawerWidth = 240;
 
@@ -24,7 +22,6 @@ export default function MapMenu() {
   useEffect(() => {
     fetchPopulation(year).then((data) => {
       setData(data);
-      console.log(data);
     });
   }, [year]);
 
@@ -65,12 +62,13 @@ export default function MapMenu() {
                 setValue={setYear}
                 label="Select Year"
               />
+
               <Box
-                width="auto"
                 sx={{
-                  width: "35vw",
+                  width: "150%",
                   maxWidth: "90vmin",
                   maxHeight: "90vmin",
+                  // border: "1px dashed grey",
                 }}
               >
                 <Map geojson={geojson} setName={setMouse} />

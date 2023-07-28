@@ -1,13 +1,14 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import * as d3 from "d3";
-import { select } from "d3-selection";
 
 export default function Pyramid(props) {
   const { town, data } = props;
   if (data.length === 0) {
     return <p>loading</p>;
   }
+
+  const [tdata, setTdata] = useState(null);
 
   // const title = `${town}の人口ピラミッド`;
   const populationData = data.filter((item) => item.town === town)[0].data;
@@ -139,25 +140,6 @@ export default function Pyramid(props) {
   };
 
   const createBar = (data) => {
-    // <g>
-    //   {data.map((d, i) => {
-    //     return (
-    //       <g key={i} transform={`translate(${width}, ${d})`}>
-    //         <rect x="0" y="0" width={`${d}`} height="30" fill={"red"} />
-    //         <text
-    //           x="60"
-    //           y="10"
-    //           textAnchor="middle"
-    //           dominantBaseline="central"
-    //           fill={infoCol}
-    //         >
-    //           {d}
-    //         </text>
-    //       </g>
-    //     );
-    //   })}
-    // </g>;
-    // console.log(data);
     return (
       <g>
         {data.map((d, i) => {
@@ -174,6 +156,11 @@ export default function Pyramid(props) {
                 width={`${xScale(d.female)}`}
                 height={yScale.bandwidth()}
                 fill={"red"}
+                onMouseEnter={(e) => {
+                  console.log(
+                    `${d.ageGroup}歳\n女性: ${d.female}人\n男性: ${d.male}人`
+                  );
+                }}
               />
             </g>
           );
@@ -192,6 +179,11 @@ export default function Pyramid(props) {
                 width={`${xScale(d.male)}`}
                 height={yScale.bandwidth()}
                 fill={"blue"}
+                onMouseEnter={(e) => {
+                  console.log(
+                    `${d.ageGroup}歳\n女性: ${d.female}人\n男性: ${d.male}人`
+                  );
+                }}
               />
             </g>
           );
