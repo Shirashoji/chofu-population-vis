@@ -26,7 +26,20 @@ export default function Pyramid(props) {
   const width = displayWidth - margin.left - margin.right;
   const height = displayHeight - margin.top - margin.bottom;
 
-  const infoCol = "black";
+  const infoCol = "lightgray";
+  const textCol = "black";
+
+  const youngs = ["0-4", "5-9", "10-14"];
+  const olds = [
+    "65-69",
+    "70-74",
+    "75-79",
+    "80-84",
+    "85-89",
+    "90-94",
+    "95-99",
+    "100+",
+  ];
 
   // x軸のスケール
   const xScale = d3
@@ -61,13 +74,14 @@ export default function Pyramid(props) {
                   y2={i % 2 == 0 ? 10 : 25}
                   stroke={infoCol}
                 />
+                <line x1="0" y1="0" x2="0" y2={-height} stroke={"lightgray"} />
                 {/* ウインドウサイズを変更に対応させる時にこの部分を文字幅に応じて縦書きにする */}
                 <text
                   x={0}
                   y={i % 2 == 0 ? 20 : 35}
                   textAnchor="middle"
                   dominantBaseline="central"
-                  fill={infoCol}
+                  fill={textCol}
                 >
                   {d}
                 </text>
@@ -85,12 +99,13 @@ export default function Pyramid(props) {
                   y2={i % 2 == 0 ? 10 : 25}
                   stroke={infoCol}
                 />
+                <line x1="0" y1="0" x2="0" y2={-height} stroke={"lightgray"} />
                 <text
                   x={0}
                   y={i % 2 == 0 ? 20 : 35}
                   textAnchor="middle"
                   dominantBaseline="central"
-                  fill={infoCol}
+                  fill={textCol}
                 >
                   {d}
                 </text>
@@ -103,9 +118,36 @@ export default function Pyramid(props) {
           y={40}
           textAnchor="middle"
           dominantBaseline="central"
-          fill={infoCol}
+          fill={textCol}
         >
           人口
+        </text>
+        <text
+          x={width / 2}
+          y={60}
+          textAnchor="middle"
+          dominantBaseline="central"
+          fill={textCol}
+        >
+          (人)
+        </text>
+        <text
+          x={width / 4}
+          y={60}
+          textAnchor="middle"
+          dominantBaseline="central"
+          fill={textCol}
+        >
+          男性
+        </text>
+        <text
+          x={(width * 3) / 4}
+          y={60}
+          textAnchor="middle"
+          dominantBaseline="central"
+          fill={textCol}
+        >
+          女性
         </text>
       </g>
     );
@@ -128,7 +170,7 @@ export default function Pyramid(props) {
                 y={yScale.bandwidth() / 2}
                 textAnchor="middle"
                 dominantBaseline="central"
-                fill={infoCol}
+                fill={textCol}
               >
                 {d}
               </text>
@@ -155,7 +197,13 @@ export default function Pyramid(props) {
                 y="0"
                 width={`${xScale(d.female)}`}
                 height={yScale.bandwidth()}
-                fill={"red"}
+                fill={
+                  youngs.includes(d.ageGroup)
+                    ? "lightcoral"
+                    : olds.includes(d.ageGroup)
+                    ? "darkred"
+                    : "red"
+                }
                 onMouseEnter={(e) => {
                   console.log(
                     `${d.ageGroup}歳\n女性: ${d.female}人\n男性: ${d.male}人`
@@ -178,7 +226,13 @@ export default function Pyramid(props) {
                 y="0"
                 width={`${xScale(d.male)}`}
                 height={yScale.bandwidth()}
-                fill={"blue"}
+                fill={
+                  youngs.includes(d.ageGroup)
+                    ? "dodgerblue"
+                    : olds.includes(d.ageGroup)
+                    ? "darkblue"
+                    : "blue"
+                }
                 onMouseEnter={(e) => {
                   console.log(
                     `${d.ageGroup}歳\n女性: ${d.female}人\n男性: ${d.male}人`
