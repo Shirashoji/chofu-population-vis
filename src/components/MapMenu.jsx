@@ -2,7 +2,6 @@ import * as React from "react";
 import { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Stack from "@mui/material/Stack";
 import Selections from "./Selections.jsx";
 import Map from "../Charts/Map.jsx";
 import Pyramid from "../Charts/Pyramid.jsx";
@@ -15,25 +14,13 @@ export default function MapMenu() {
   const years = ["2021", "2020", "2019", "2018", "2017"];
   const [year, setYear] = React.useState(years[0]);
   const [data, setData] = React.useState([]);
-  const [townList, setTownList] = React.useState([]);
   const [town, setTown] = React.useState("市内全域");
-  const [mouse, setMouse] = React.useState("市内全域");
 
   useEffect(() => {
     fetchPopulation(year).then((data) => {
       setData(data);
     });
   }, [year]);
-
-  useEffect(() => {
-    setTownList(data.map((item) => item.town));
-  }, [data]);
-
-  useEffect(() => {
-    if (townList.includes(mouse)) {
-      setTown(mouse);
-    }
-  }, [mouse]);
 
   return (
     <div className="App">
@@ -44,14 +31,20 @@ export default function MapMenu() {
       >
         <Grid
           container
+          xs="auto"
           spacing={2}
           sx={{ p: 2 }}
           justifyContent="center"
           alignItems="center"
         >
-          <Grid item xs="auto" justifyContent="center" alignItems="center">
-            <Stack
-              spacing={2}
+          <Box
+            sx={{
+              width: "500px",
+            }}
+          >
+            <Grid
+              container
+              xs="auto"
               direction="column"
               justifyContent="center"
               alignItems="center"
@@ -65,19 +58,20 @@ export default function MapMenu() {
 
               <Box
                 sx={{
-                  width: "150%",
+                  width: "500px",
+                  pt: 2,
                   maxWidth: "90vmin",
                   maxHeight: "90vmin",
                 }}
               >
-                <Map geojson={geojson} setName={setMouse} />
+                <Map geojson={geojson} setName={setTown} />
               </Box>
-            </Stack>
-          </Grid>
+            </Grid>
+          </Box>
           <Grid item xs="auto">
             <Box
               sx={{
-                width: "100vw",
+                width: "808px",
                 maxWidth: "90vmin",
                 maxHeight: "90vmin",
               }}

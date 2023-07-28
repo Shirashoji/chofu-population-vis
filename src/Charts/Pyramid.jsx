@@ -8,11 +8,6 @@ export default function Pyramid(props) {
     return <p>loading</p>;
   }
 
-  const [tdata, setTdata] = useState(null);
-
-  // const title = `${town}の人口ピラミッド`;
-  const populationData = data.filter((item) => item.town === town)[0].data;
-
   const displayWidth = 700;
   const displayHeight = displayWidth * 0.9;
   const centerSlid = displayWidth / 9;
@@ -25,6 +20,18 @@ export default function Pyramid(props) {
   const scheme = d3.scaleOrdinal(d3.schemeTableau10);
   const width = displayWidth - margin.left - margin.right;
   const height = displayHeight - margin.top - margin.bottom;
+
+  // const title = `${town}の人口ピラミッド`;
+  const townList = data.map((item) => item.town);
+  if (!townList.includes(town)) {
+    return <HumanNotFound town={town} />;
+  }
+
+  const populationData = data.filter((item) => item.town === town)[0].data;
+
+  if (Math.max(...populationData.map((e) => [e.male, e.female]).flat()) == 0) {
+    return <HumanNotFound town={town} />;
+  }
 
   const infoCol = "lightgray";
   const textCol = "black";
@@ -199,10 +206,10 @@ export default function Pyramid(props) {
                 height={yScale.bandwidth()}
                 fill={
                   youngs.includes(d.ageGroup)
-                    ? "lightcoral"
+                    ? "salmon"
                     : olds.includes(d.ageGroup)
-                    ? "darkred"
-                    : "red"
+                    ? "indianred"
+                    : "crimson"
                 }
                 onMouseEnter={(e) => {
                   console.log(
@@ -230,8 +237,8 @@ export default function Pyramid(props) {
                   youngs.includes(d.ageGroup)
                     ? "dodgerblue"
                     : olds.includes(d.ageGroup)
-                    ? "darkblue"
-                    : "blue"
+                    ? "steelblue"
+                    : "royalblue"
                 }
                 onMouseEnter={(e) => {
                   console.log(
@@ -245,6 +252,10 @@ export default function Pyramid(props) {
       </g>
     );
   };
+
+  if (populationData.length === 0) {
+    return <div>loading...</div>;
+  }
 
   return (
     <>
@@ -264,6 +275,59 @@ export default function Pyramid(props) {
             {createLegend(categories)}
           </g> */}
         </g>
+      </svg>
+    </>
+  );
+}
+
+function HumanNotFound(props) {
+  const { town } = props;
+  const displayWidth = 700;
+  const displayHeight = displayWidth * 0.9;
+  const margin = {
+    top: displayWidth / 12,
+    right: displayWidth / 13,
+    bottom: displayWidth / 10,
+    left: displayWidth / 14,
+  };
+  const width = displayWidth - margin.left - margin.right;
+  const height = displayHeight - margin.top - margin.bottom;
+
+  return (
+    <>
+      <svg
+        viewBox={`0 0 ${displayWidth} ${displayHeight}`}
+        style={{
+          background: "white",
+          userSelect: "none",
+        }}
+      >
+        <image
+          x={displayWidth / 2 - 150}
+          y={displayHeight / 6}
+          width="300"
+          height="300"
+          xlinkHref="https://raw.githubusercontent.com/onoue-panda/repository/main/onouepanda-t600.png"
+          href="https://raw.githubusercontent.com/onoue-panda/repository/main/onouepanda-t600.png"
+        ></image>
+        <text
+          x={displayWidth / 2}
+          y={(displayHeight * 5) / 7}
+          fontSize={displayWidth / 13}
+          textAnchor="middle"
+          dominantBaseline="central"
+        >
+          {town}で
+        </text>
+        <text
+          x={displayWidth / 2}
+          y={(displayHeight * 6) / 7}
+          fontSize={displayWidth / 15}
+          textAnchor="middle"
+          dominantBaseline="central"
+        >
+          居住者は発見できなかった
+        </text>
       </svg>
     </>
   );
