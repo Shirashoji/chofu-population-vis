@@ -99,7 +99,7 @@ export default function Map(props) {
                 onMouseOut={(e) => {
                   if (!click || town !== d.properties.name) {
                     select(e.target).attr("fill", fillCol);
-                    if (!click[0]) {
+                    if (!click) {
                       setTown("市内全域");
                     }
                   }
