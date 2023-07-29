@@ -55,21 +55,15 @@ export default function FilterMenu() {
             </Stack>
           </Grid>
           <Grid item xs="auto">
-            <Container
-              maxWidth="ms"
-              justifyContent="center"
-              alignItems="center"
+            <Box
+              sx={{
+                width: "90vw",
+                maxWidth: "90vmin",
+                maxHeight: "90vmin",
+              }}
             >
-              <Box
-                sx={{
-                  width: "90vw",
-                  maxWidth: "90vmin",
-                  maxHeight: "90vmin",
-                }}
-              >
-                <Pyramid town={town} data={data} />
-              </Box>
-            </Container>
+              <Pyramid town={town} data={data} />
+            </Box>
           </Grid>
         </Grid>
       </Box>
