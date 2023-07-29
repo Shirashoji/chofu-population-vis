@@ -310,6 +310,22 @@ function HumanNotFound(props) {
           xlinkHref="https://raw.githubusercontent.com/onoue-panda/repository/main/onouepanda-t600.png"
           href="https://raw.githubusercontent.com/onoue-panda/repository/main/onouepanda-t600.png"
         ></image>
+        <rect
+          x={(displayWidth * 2) / 7}
+          y={displayHeight / 4.5}
+          width={(displayWidth * 3) / 7}
+          height={displayHeight / 10}
+        ></rect>
+        <text
+          x={displayWidth / 2}
+          y={displayHeight / 4.5 + displayHeight / 20}
+          fontSize={displayWidth / 30}
+          textAnchor="middle"
+          dominantBaseline="central"
+          fill="white"
+        >
+          おのうえパンダ制作委員会
+        </text>
         <text
           x={displayWidth / 2}
           y={(displayHeight * 5) / 7}
