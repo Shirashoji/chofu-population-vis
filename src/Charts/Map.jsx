@@ -3,6 +3,12 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { geoMercator, geoPath } from "d3-geo";
 import { select } from "d3-selection";
+import { colors } from "@mui/material";
+
+function RGB2HSL(color) {
+    const hslColor = d3.hsl(color);
+    return `hsl(${hslColor.h}, ${hslColor.s * 100}%, ${hslColor.l * 100}%)`;
+}
 
 export default function Map(props) {
     const { geojson, feature, setName } = props;
@@ -26,7 +32,7 @@ export default function Map(props) {
     );
     const path = geoPath().projection(projection);
     const [town, setTown] = React.useState("市内全域");
-    const [selected, setSelect] = React.useState(null);
+    const [selected, setSelect] = React.useState(false);
 
     useEffect(() => {
         if (town) setName(town);
@@ -45,10 +51,88 @@ export default function Map(props) {
 
     const mapColors = d3.interpolateBlues;
 
+    const selectedLayer = () => {
+        if (town === "市内全域") return null;
+        const layer = geojson.features.filter(
+            (e) => e.properties.name === town
+        );
+        const fillCol =
+            feature.length === 0
+                ? "#eee"
+                : feature.filter((e) => e.town === town).length > 0
+                ? mapColors(
+                      featScale(feature.filter((e) => e.town === town)[0].value)
+                  )
+                : "gray";
+        console.log(layer);
+        return (
+            <g className="selected-layer">
+                {layer.map((d, i) => (
+                    <path
+                        key={`selectedLayer-${i}`}
+                        d={path(d)}
+                        fill={fillCol}
+                        stroke="#f00"
+                        strokeWidth="4"
+                        strokeOpacity="1"
+                        onMouseEnter={(e) => {
+                            if (!selected) {
+                                setTown(d.properties.name);
+                            }
+                        }}
+                        onMouseLeave={(e) => {
+                            if (!selected) {
+                                setTown("市内全域");
+                            }
+                        }}
+                        onMouseDown={(e) => {
+                            if (!selected) {
+                                setSelect(true);
+                            } else {
+                                setSelect(false);
+                            }
+                        }}
+                    />
+                ))}
+            </g>
+        );
+    };
+
     return (
         <div className="Map">
             {/* <svg width={width} height={height}> */}
             <svg viewBox={`0 0 ${width} ${height}`}>
+                <defs>
+                    <linearGradient id="Gradient" x1="0" x2="1" y1="0" y2="0">
+                        {Array.from({ length: 101 }, (_, i) => i / 100).map(
+                            (tick, i) => (
+                                <stop
+                                    key={`gadient-${i}`}
+                                    offset={`${i}%`}
+                                    stopColor={mapColors(tick)}
+                                />
+                            )
+                        )}
+                    </linearGradient>
+                </defs>
+                <g className="backGround">
+                    <rect
+                        x={0}
+                        y={0}
+                        width={width}
+                        height={height}
+                        fill="#fff"
+                        onMouseEnter={(e) => {
+                            if (!selected) {
+                                setTown("市内全域");
+                            }
+                        }}
+                        onMouseDown={(e) => {
+                            setTown("市内全域");
+                            setSelect(false);
+                        }}
+                    />
+                </g>
                 <g className="geojson-layer">
                     {geojson.features.map((d, i) => {
                         const fillCol =
@@ -65,7 +149,7 @@ export default function Map(props) {
                                           )[0].value
                                       )
                                   )
-                                : "white";
+                                : "gray";
                         return (
                             <path
                                 key={i}
@@ -76,92 +160,86 @@ export default function Map(props) {
                                 strokeOpacity="0.5"
                                 onMouseEnter={(e) => {
                                     if (!selected) {
-                                        if (!selected) {
-                                            setTown(d.properties.name);
-                                        }
-                                        select(e.target).attr(
-                                            "stroke-width",
-                                            "5"
-                                        );
-                                        select(e.target).attr("stroke", "#f00");
-                                        select(e.target).attr(
-                                            "stroke-opacity",
-                                            "1"
-                                        );
+                                        setTown(d.properties.name);
                                     }
                                 }}
                                 onMouseLeave={(e) => {
                                     if (!selected) {
-                                        select(e.target).attr(
-                                            "stroke-width",
-                                            "1"
-                                        );
-                                        select(e.target).attr(
-                                            "stroke",
-                                            "#0e1724"
-                                        );
-                                        select(e.target).attr(
-                                            "stroke-opacity",
-                                            "0.5"
-                                        );
                                         setTown("市内全域");
                                     }
                                 }}
                                 onMouseDown={(e) => {
-                                    if (!selected) {
-                                        select(e.target).attr(
-                                            "stroke-width",
-                                            "5"
-                                        );
-                                        select(e.target).attr("stroke", "#f00");
-                                        select(e.target).attr(
-                                            "stroke-opacity",
-                                            "1"
-                                        );
-                                        setTown(d.properties.name);
-                                        setSelect(e.target);
-                                    } else {
-                                        setTown(
-                                            town === d.properties.name
-                                                ? "市内全域"
-                                                : d.properties.name
-                                        );
-                                        select(selected).attr(
-                                            "stroke-width",
-                                            "1"
-                                        );
-                                        select(selected).attr(
-                                            "stroke",
-                                            "#0e1724"
-                                        );
-                                        select(selected).attr(
-                                            "stroke-opacity",
-                                            "0.5"
-                                        );
-                                        if (town !== d.properties.name) {
-                                            select(e.target).attr(
-                                                "stroke-width",
-                                                "5"
-                                            );
-                                            select(e.target).attr(
-                                                "stroke",
-                                                "#f00"
-                                            );
-                                            select(e.target).attr(
-                                                "stroke-opacity",
-                                                "1"
-                                            );
-                                        }
-                                        setSelect(null);
-                                    }
+                                    setTown(d.properties.name);
+                                    setSelect(true);
                                 }}
                             />
                         );
                     })}
+                    {selectedLayer()}
                 </g>
                 <text x={width / 2} y={height * 0.98} textAnchor="middle">
                     {town}
                 </text>
+                <rect
+                    x={(height * 3) / 4 - 2}
+                    y={(height * 3) / 4 - 2}
+                    width={104}
+                    height={21}
+                    fill="gray"
+                />
+                <rect
+                    x={(height * 3) / 4}
+                    y={(height * 3) / 4}
+                    width={100}
+                    height={17}
+                    fill="url(#Gradient)"
+                />
+                <text
+                    x={(height * 3) / 4}
+                    y={(height * 3) / 4 + 22}
+                    textAnchor="middle"
+                    dominantBaseline="hanging"
+                    color="gray"
+                    fontSize="85%"
+                >
+                    0
+                </text>
+                <text
+                    x={(height * 3) / 4 + 100}
+                    y={(height * 3) / 4 + 22}
+                    textAnchor="middle"
+                    dominantBaseline="hanging"
+                    color="gray"
+                    fontSize="85%"
+                >
+                    1
+                </text>
+                <text
+                    x={(height * 3) / 4}
+                    y={(height * 3) / 4 - 5}
+                    textAnchor="start"
+                    dominantBaseline="text-top"
+                    fontSize="95%"
+                >
+                    地域特徴度
+                </text>
+
+                <text
+                    x={(height * 3) / 4}
+                    y={(height * 3) / 4 + 60 - 5}
+                    textAnchor="start"
+                    dominantBaseline="text-top"
+                    fontSize="95%"
+                >
+                    無人地域
+                </text>
+                <rect
+                    x={(height * 3) / 4}
+                    y={(height * 3) / 4 + 60}
+                    width={100}
+                    height={17}
+                    fill="gray"
+                />
             </svg>
         </div>
     );
