@@ -1478,7 +1478,7 @@
         },
         {
             "type": "Feature",
-            "properties": { "name": "深大寺東町6丁目" },
+            "properties": { "name": "深大寺東町5丁目" },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
