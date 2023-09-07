@@ -9,8 +9,8 @@ function Tooltip(props) {
 
     const tooltipStyle = {
         position: "absolute",
-        left: pos.x + 10,
-        top: pos.y + 10,
+        left: pos.x + 15,
+        top: pos.y + 15,
     };
 
     return (

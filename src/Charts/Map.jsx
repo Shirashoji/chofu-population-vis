@@ -208,39 +208,15 @@ export default function Map(props) {
                                     if (!selected) {
                                         setTown(d.properties.name);
                                     }
-                                    setToolInfo(
-                                        feature.length === 0
-                                            ? null
-                                            : feature.filter(
-                                                  (e) =>
-                                                      e.town ===
-                                                      d.properties.name
-                                              ).length > 0
-                                            ? tooltipTemplate(
-                                                  d.properties.name,
-                                                  featScale(
-                                                      feature.filter(
-                                                          (e) =>
-                                                              e.town ===
-                                                              d.properties.name
-                                                      )[0].value
-                                                  )
-                                              )
-                                            : tooltipTemplate("無人地域")
-                                    );
                                 }}
                                 onMouseLeave={(e) => {
                                     if (!selected) {
                                         setTown("市内全域");
                                     }
-                                    setToolInfo(null);
                                 }}
                                 onMouseDown={(e) => {
                                     setTown(d.properties.name);
                                     setSelect(true);
-                                }}
-                                onPointerMove={(e) => {
-                                    setPos({ x: e.pageX, y: e.pageY });
                                 }}
                             />
                         );
