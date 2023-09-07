@@ -23,10 +23,10 @@ function Tooltip(props) {
         position: "absolute",
     };
 
-    if (toolCat.gender === "female") {
-        tooltipStyle.left = pos.x - 370;
-    } else {
+    if (toolCat.gender === "male") {
         tooltipStyle.left = pos.x + 10;
+    } else {
+        tooltipStyle.left = pos.x - 370;
     }
 
     if (["0-4", "5-9", "10-14", "15-19", "20-24"].includes(toolCat.ageGroup)) {
@@ -46,9 +46,6 @@ function Tooltip(props) {
                                 : `${toolCat.ageGroup.replace("-", "~")}歳`
                         }`}
                     </Typography>
-                    {/* <Typography variant="body2" color="text.secondary">
-                        男性の人口
-                    </Typography> */}
                 </CardContent>
                 <CardActionArea>
                     <CardActions>

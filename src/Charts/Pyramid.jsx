@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as d3 from "d3";
-import Tooltip from "./Tooltip";
+import Tooltip from "./PyramidTooltip";
 
 export default function Pyramid(props) {
     const { town, data } = props;

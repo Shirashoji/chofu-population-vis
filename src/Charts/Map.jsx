@@ -2,8 +2,7 @@ import * as d3 from "d3";
 import React from "react";
 import { useEffect, useState } from "react";
 import { geoMercator, geoPath } from "d3-geo";
-import { select } from "d3-selection";
-import { colors } from "@mui/material";
+import Tooltip from "./MapTooltip.jsx";
 
 function RGB2HSL(color) {
     const hslColor = d3.hsl(color);
@@ -12,6 +11,9 @@ function RGB2HSL(color) {
 
 export default function Map(props) {
     const { geojson, feature, setName } = props;
+
+    const [pos, setPos] = React.useState({ x: 0, y: 0 });
+    const [toolInfo, setToolInfo] = React.useState(null);
 
     if (geojson.length === 0) {
         return (
@@ -64,7 +66,6 @@ export default function Map(props) {
                       featScale(feature.filter((e) => e.town === town)[0].value)
                   )
                 : "gray";
-        console.log(layer);
         return (
             <g className="selected-layer">
                 {layer.map((d, i) => (
@@ -186,6 +187,18 @@ export default function Map(props) {
                     width={104}
                     height={21}
                     fill="gray"
+                    onMouseEnter={(e) => {
+                        setToolInfo({
+                            title: "地域特徴度",
+                            info: "町丁において，調布市内全域における人口ピラミッドの形と離れているほど地域特徴度の値は高くなり，逆に調布市内全域の人口ピラミッドの形に近いほど地域特徴度の値は低くなります．",
+                        });
+                    }}
+                    onMouseLeave={(e) => {
+                        setToolInfo(null);
+                    }}
+                    onPointerMove={(e) => {
+                        setPos({ x: e.pageX, y: e.pageY });
+                    }}
                 />
                 <rect
                     x={(height * 3) / 4}
@@ -193,6 +206,18 @@ export default function Map(props) {
                     width={100}
                     height={17}
                     fill="url(#Gradient)"
+                    onMouseEnter={(e) => {
+                        setToolInfo({
+                            title: "地域特徴度",
+                            info: "町丁において，調布市内全域における人口ピラミッドの形と離れているほど地域特徴度の値は高くなり，逆に調布市内全域の人口ピラミッドの形に近いほど地域特徴度の値は低くなります．",
+                        });
+                    }}
+                    onMouseLeave={(e) => {
+                        setToolInfo(null);
+                    }}
+                    onPointerMove={(e) => {
+                        setPos({ x: e.pageX, y: e.pageY });
+                    }}
                 />
                 <text
                     x={(height * 3) / 4}
@@ -220,6 +245,18 @@ export default function Map(props) {
                     textAnchor="start"
                     dominantBaseline="text-top"
                     fontSize="95%"
+                    onMouseEnter={(e) => {
+                        setToolInfo({
+                            title: "地域特徴度",
+                            info: "町丁において，調布市内全域における人口ピラミッドの形と離れているほど地域特徴度の値は高くなり，逆に調布市内全域の人口ピラミッドの形に近いほど地域特徴度の値は低くなります．",
+                        });
+                    }}
+                    onMouseLeave={(e) => {
+                        setToolInfo(null);
+                    }}
+                    onPointerMove={(e) => {
+                        setPos({ x: e.pageX, y: e.pageY });
+                    }}
                 >
                     地域特徴度
                 </text>
@@ -230,17 +267,42 @@ export default function Map(props) {
                     textAnchor="start"
                     dominantBaseline="text-top"
                     fontSize="95%"
+                    onMouseEnter={(e) => {
+                        setToolInfo({
+                            title: "無人地域",
+                            info: "居住者が確認されていない地域です．",
+                        });
+                    }}
+                    onMouseLeave={(e) => {
+                        setToolInfo(null);
+                    }}
+                    onPointerMove={(e) => {
+                        setPos({ x: e.pageX, y: e.pageY });
+                    }}
                 >
                     無人地域
                 </text>
                 <rect
-                    x={(height * 3) / 4}
-                    y={(height * 3) / 4 + 60}
-                    width={100}
-                    height={17}
+                    x={(height * 3) / 4 - 2}
+                    y={(height * 3) / 4 + 58}
+                    width={104}
+                    height={21}
                     fill="gray"
+                    onMouseEnter={(e) => {
+                        setToolInfo({
+                            title: "無人地域",
+                            info: "居住者が確認されていない地域です．",
+                        });
+                    }}
+                    onMouseLeave={(e) => {
+                        setToolInfo(null);
+                    }}
+                    onPointerMove={(e) => {
+                        setPos({ x: e.pageX, y: e.pageY });
+                    }}
                 />
             </svg>
+            <Tooltip pos={pos} info={toolInfo} />
         </div>
     );
 }
