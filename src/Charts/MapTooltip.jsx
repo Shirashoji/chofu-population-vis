@@ -15,7 +15,7 @@ function Tooltip(props) {
 
     return (
         <div style={tooltipStyle}>
-            <Card sx={{ width: 360 }}>
+            <Card sx={{ maxWidth: 360 }}>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
                         {info.title}

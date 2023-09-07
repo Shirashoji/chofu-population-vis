@@ -53,6 +53,28 @@ export default function Map(props) {
 
     const mapColors = d3.interpolateBlues;
 
+    const tooltipTemplate = (title, featureValue = null) => {
+        if (title == "地域特徴度") {
+            return {
+                title: "地域特徴度",
+                info: "町丁において，調布市内全域における人口ピラミッドの形と離れているほど地域特徴度の値は高くなり，逆に調布市内全域の人口ピラミッドの形に近いほど地域特徴度の値は低くなります．",
+            };
+        } else if (title == "無人地域") {
+            return {
+                title: "無人地域",
+                info: "居住者が確認されていない地域です．",
+            };
+        }
+         else if (featureValue == null) {
+            return null;
+        } else {
+            return {
+                title: title,
+                info: `地域特徴度: ${d3.format(".4f")(featureValue)}`,
+            };
+        }
+    };
+
     const selectedLayer = () => {
         if (town === "市内全域") return null;
         const layer = geojson.features.filter(
@@ -80,11 +102,30 @@ export default function Map(props) {
                             if (!selected) {
                                 setTown(d.properties.name);
                             }
+                            setToolInfo(
+                                feature.length === 0
+                                    ? null
+                                    : feature.filter(
+                                          (e) => e.town === d.properties.name
+                                      ).length > 0
+                                    ? tooltipTemplate(
+                                          d.properties.name,
+                                          featScale(
+                                              feature.filter(
+                                                  (e) =>
+                                                      e.town ===
+                                                      d.properties.name
+                                              )[0].value
+                                          )
+                                      )
+                                    : tooltipTemplate("無人地域")
+                            );
                         }}
                         onMouseLeave={(e) => {
                             if (!selected) {
                                 setTown("市内全域");
                             }
+                            setToolInfo(null);
                         }}
                         onMouseDown={(e) => {
                             if (!selected) {
@@ -92,6 +133,9 @@ export default function Map(props) {
                             } else {
                                 setSelect(false);
                             }
+                        }}
+                        onPointerMove={(e) => {
+                            setPos({ x: e.pageX, y: e.pageY });
                         }}
                     />
                 ))}
@@ -127,6 +171,7 @@ export default function Map(props) {
                             if (!selected) {
                                 setTown("市内全域");
                             }
+                            setToolInfo(null);
                         }}
                         onMouseDown={(e) => {
                             setTown("市内全域");
@@ -163,15 +208,39 @@ export default function Map(props) {
                                     if (!selected) {
                                         setTown(d.properties.name);
                                     }
+                                    setToolInfo(
+                                        feature.length === 0
+                                            ? null
+                                            : feature.filter(
+                                                  (e) =>
+                                                      e.town ===
+                                                      d.properties.name
+                                              ).length > 0
+                                            ? tooltipTemplate(
+                                                  d.properties.name,
+                                                  featScale(
+                                                      feature.filter(
+                                                          (e) =>
+                                                              e.town ===
+                                                              d.properties.name
+                                                      )[0].value
+                                                  )
+                                              )
+                                            : tooltipTemplate("無人地域")
+                                    );
                                 }}
                                 onMouseLeave={(e) => {
                                     if (!selected) {
                                         setTown("市内全域");
                                     }
+                                    setToolInfo(null);
                                 }}
                                 onMouseDown={(e) => {
                                     setTown(d.properties.name);
                                     setSelect(true);
+                                }}
+                                onPointerMove={(e) => {
+                                    setPos({ x: e.pageX, y: e.pageY });
                                 }}
                             />
                         );
@@ -188,10 +257,7 @@ export default function Map(props) {
                     height={21}
                     fill="gray"
                     onMouseEnter={(e) => {
-                        setToolInfo({
-                            title: "地域特徴度",
-                            info: "町丁において，調布市内全域における人口ピラミッドの形と離れているほど地域特徴度の値は高くなり，逆に調布市内全域の人口ピラミッドの形に近いほど地域特徴度の値は低くなります．",
-                        });
+                        setToolInfo(tooltipTemplate("地域特徴度"));
                     }}
                     onMouseLeave={(e) => {
                         setToolInfo(null);
@@ -207,10 +273,7 @@ export default function Map(props) {
                     height={17}
                     fill="url(#Gradient)"
                     onMouseEnter={(e) => {
-                        setToolInfo({
-                            title: "地域特徴度",
-                            info: "町丁において，調布市内全域における人口ピラミッドの形と離れているほど地域特徴度の値は高くなり，逆に調布市内全域の人口ピラミッドの形に近いほど地域特徴度の値は低くなります．",
-                        });
+                        setToolInfo(tooltipTemplate("地域特徴度"));
                     }}
                     onMouseLeave={(e) => {
                         setToolInfo(null);
@@ -246,10 +309,8 @@ export default function Map(props) {
                     dominantBaseline="text-top"
                     fontSize="95%"
                     onMouseEnter={(e) => {
-                        setToolInfo({
-                            title: "地域特徴度",
-                            info: "町丁において，調布市内全域における人口ピラミッドの形と離れているほど地域特徴度の値は高くなり，逆に調布市内全域の人口ピラミッドの形に近いほど地域特徴度の値は低くなります．",
-                        });
+                        setToolInfo(tooltipTemplate("無人地域"));
+                        setToolInfo(tooltipTemplate("地域特徴度"));
                     }}
                     onMouseLeave={(e) => {
                         setToolInfo(null);
@@ -268,10 +329,7 @@ export default function Map(props) {
                     dominantBaseline="text-top"
                     fontSize="95%"
                     onMouseEnter={(e) => {
-                        setToolInfo({
-                            title: "無人地域",
-                            info: "居住者が確認されていない地域です．",
-                        });
+                        setToolInfo(tooltipTemplate("無人地域"));
                     }}
                     onMouseLeave={(e) => {
                         setToolInfo(null);
@@ -289,10 +347,7 @@ export default function Map(props) {
                     height={21}
                     fill="gray"
                     onMouseEnter={(e) => {
-                        setToolInfo({
-                            title: "無人地域",
-                            info: "居住者が確認されていない地域です．",
-                        });
+                        setToolInfo(tooltipTemplate("無人地域"));
                     }}
                     onMouseLeave={(e) => {
                         setToolInfo(null);
