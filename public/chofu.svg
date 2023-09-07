@@ -12,30 +12,30 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview13"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     showguides="false"
-     inkscape:zoom="0.39333333"
-     inkscape:cx="329.23729"
-     inkscape:cy="300"
-     inkscape:window-width="1512"
-     inkscape:window-height="456"
-     inkscape:window-x="0"
-     inkscape:window-y="38"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2" />
-  <defs
-     id="defs5" />
-  <path
-     d="M 300.00001,0 C 134.4,0 0,134.4 0,300.00001 0,465.60001 134.4,600 300.00001,600 465.60001,600 600,465.60001 600,300.00001 H 555.10416 224.99998 c 0,-30.38254 18.11968,-56.55003 44.1146,-68.33336 H 592.1354 c -1.04865,-4.48833 -2.19111,-8.92385 -3.43746,-13.33333 H 300.00001 V 150 c -52.69181,0 -99.07472,27.20309 -125.83335,68.33332 h -62.49998 c -2.49638,3.78447 -3.95136,8.845 -5,13.33333 h 59.79164 C 155.94294,252.16345 150,275.39346 150,300.00001 c 0,27.31891 7.32679,52.93079 20.10417,74.99997 H 512.18749 C 481.27772,462.36112 397.90604,525 300.00001,525 175.80002,525 75.000003,424.20001 75.000003,300.00001 c 0,-124.19999 100.800017,-225.000007 225.000007,-225.000007 66.59229,0 126.44812,28.974607 167.65624,74.999997 h 92.18751 C 507.94575,60.359322 410.96329,0 300.00001,0 Z"
-     id="path2411"
-     style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:1.66666" />
+   <sodipodi:namedview
+      id="namedview13"
+      pagecolor="#ffffff"
+      bordercolor="#666666"
+      borderopacity="1.0"
+      inkscape:showpageshadow="2"
+      inkscape:pageopacity="0.0"
+      inkscape:pagecheckerboard="0"
+      inkscape:deskcolor="#d1d1d1"
+      showgrid="false"
+      showguides="false"
+      inkscape:zoom="0.39333333"
+      inkscape:cx="329.23729"
+      inkscape:cy="300"
+      inkscape:window-width="1512"
+      inkscape:window-height="456"
+      inkscape:window-x="0"
+      inkscape:window-y="38"
+      inkscape:window-maximized="0"
+      inkscape:current-layer="svg2" />
+   <defs
+      id="defs5" />
+   <path
+      d="M 300.00001,0 C 134.4,0 0,134.4 0,300.00001 0,465.60001 134.4,600 300.00001,600 465.60001,600 600,465.60001 600,300.00001 H 555.10416 224.99998 c 0,-30.38254 18.11968,-56.55003 44.1146,-68.33336 H 592.1354 c -1.04865,-4.48833 -2.19111,-8.92385 -3.43746,-13.33333 H 300.00001 V 150 c -52.69181,0 -99.07472,27.20309 -125.83335,68.33332 h -62.49998 c -2.49638,3.78447 -3.95136,8.845 -5,13.33333 h 59.79164 C 155.94294,252.16345 150,275.39346 150,300.00001 c 0,27.31891 7.32679,52.93079 20.10417,74.99997 H 512.18749 C 481.27772,462.36112 397.90604,525 300.00001,525 175.80002,525 75.000003,424.20001 75.000003,300.00001 c 0,-124.19999 100.800017,-225.000007 225.000007,-225.000007 66.59229,0 126.44812,28.974607 167.65624,74.999997 h 92.18751 C 507.94575,60.359322 410.96329,0 300.00001,0 Z"
+      id="path2411"
+      style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:1.66666" />
 </svg>

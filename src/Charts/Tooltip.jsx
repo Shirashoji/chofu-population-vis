@@ -66,17 +66,11 @@ function InfoTable(props) {
         return { label, value };
     }
 
-    // console.log(categories);
-    // console.log(data.map((item) => item.town));
-
     const townList = data.map((item) => item.town);
 
     const populationData = data.filter(
         (item) => item.town === categories.town
     )[0].data;
-    console.log(
-        populationData.filter((item) => item.ageGroup === categories.ageGroup)
-    );
 
     const populationSum = populationData
         .map((e) => [e.male, e.female])
@@ -86,9 +80,6 @@ function InfoTable(props) {
     const townPopulation = populationData.filter(
         (item) => item.ageGroup === categories.ageGroup
     )[0][categories.gender];
-
-    console.log(townPopulation);
-    console.log(populationSum);
 
     const rows = [
         createData(
