@@ -86,7 +86,7 @@ function InfoTable(props) {
             )[0][categories.gender]
         ),
         createData(
-            "割合(%)",
+            "この地域における割合(%)",
             d3.format(".4f")((townPopulation / populationSum) * 100)
         ),
     ];
