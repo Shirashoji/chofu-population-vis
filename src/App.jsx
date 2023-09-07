@@ -3,21 +3,28 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Navigation from "./components/Navigation";
 import FilterMenu from "./components/FilterMenu";
 import MapMenu from "./components/MapMenu";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-function App() {
-  const [count, setCount] = useState(0);
+import {
+  createBrowserRouter,
+  Route,
+  RouterProvider,
+  Routes,
+} from "react-router-dom";
+const router = createBrowserRouter([{ path: "*", Component: Root }]);
 
+function App() {
+  return <RouterProvider router={router} />;
+}
+
+function Root() {
   return (
     <div style={{ background: "white" }}>
       <CssBaseline />
       <Navigation style={{ background: "white" }}>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<MapMenu />} />
-            <Route path="/map" element={<MapMenu />} />
-            <Route path="/filter" element={<FilterMenu />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MapMenu />} />
+          <Route path="/map" element={<MapMenu />} />
+          <Route path="/filter" element={<FilterMenu />} />
+        </Routes>
       </Navigation>
     </div>
   );
