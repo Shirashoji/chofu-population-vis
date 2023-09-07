@@ -64,8 +64,7 @@ export default function Map(props) {
                 title: "無人地域",
                 info: "居住者が確認されていない地域です．",
             };
-        }
-         else if (featureValue == null) {
+        } else if (featureValue == null) {
             return null;
         } else {
             return {
@@ -88,6 +87,7 @@ export default function Map(props) {
                       featScale(feature.filter((e) => e.town === town)[0].value)
                   )
                 : "gray";
+        const lineCol = "red";
         return (
             <g className="selected-layer">
                 {layer.map((d, i) => (
@@ -95,7 +95,7 @@ export default function Map(props) {
                         key={`selectedLayer-${i}`}
                         d={path(d)}
                         fill={fillCol}
-                        stroke="#f00"
+                        stroke={lineCol}
                         strokeWidth="4"
                         strokeOpacity="1"
                         onMouseEnter={(e) => {
