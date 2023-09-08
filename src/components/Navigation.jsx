@@ -24,7 +24,7 @@ const navItems = [
     // { item: "About", link: "./about" },
     {
         item: "GitHub",
-        link: "https://github.com/Shirashoji/chofu-population-viz",
+        link: "https://github.com/Shirashoji/chofu-population-vis",
     },
 ];
 
@@ -38,7 +38,7 @@ function Navigation(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ my: 2 }}>
-                Chofu Population Viz
+                Chofu Population Vis
             </Typography>
             <Divider />
             <List>
@@ -82,7 +82,7 @@ function Navigation(props) {
                             display: { xs: "none", sm: "block" },
                         }}
                     >
-                        Chofu Population Viz
+                        Chofu Population Vis
                     </Typography>
                     <Box sx={{ display: { xs: "none", sm: "block" } }}>
                         {navItems.map(({ item, link }) => (
