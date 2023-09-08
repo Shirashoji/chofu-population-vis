@@ -1,2170 +1,2170 @@
 {
-  "type": "FeatureCollection",
-  "name": "Chofu-city-name",
-  "crs": {
-    "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:EPSG::6668" }
-  },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022612843_3",
-        "fid": "50226-12843-i-2332",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "野水1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.524348663000012, 35.682138038]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022612846_3",
-        "fid": "50226-12846-i-3011",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "野水2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.524477342000012, 35.685907692]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022912840_1",
-        "fid": "50229-12840-i-1166",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "西町",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.528201238, 35.66813008]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512840_1",
-        "fid": "50235-12840-i-6795",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺元町5丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.549422602, 35.669398766]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512840_2",
-        "fid": "50235-12840-i-6796",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺元町4丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.543251242, 35.669971805]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512840_3",
-        "fid": "50235-12840-i-6797",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺北町1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.547484716000014, 35.674254048]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512840_4",
-        "fid": "50235-12840-i-6798",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺北町7丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.543886504, 35.674785605]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512843_1",
-        "fid": "50235-12843-i-3351",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺北町3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.549737932, 35.676594271]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512843_2",
-        "fid": "50235-12843-i-3352",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺北町5丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.549967018, 35.678937743]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512843_3",
-        "fid": "50235-12843-i-3353",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺北町6丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.545401219000013, 35.679102819]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812840_1",
-        "fid": "50238-12840-i-4014",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺南町5丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.557100259, 35.667405871]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812840_2",
-        "fid": "50238-12840-i-4015",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺東町1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.557823418999988, 35.670237244]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812840_3",
-        "fid": "50238-12840-i-4016",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺東町5丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.555873457, 35.67355041]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812840_4",
-        "fid": "50238-12840-i-4017",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺北町2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.552393218, 35.673171844]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812843_2",
-        "fid": "50238-12843-i-3553",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺東町6丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.55780140600001, 35.675212248]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812843_3",
-        "fid": "50238-12843-i-3554",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺北町4丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.552954948, 35.679400484]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812843_4",
-        "fid": "50238-12843-i-3555",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺東町8丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.555779682, 35.680208798]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112840_1",
-        "fid": "50241-12840-i-4851",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺東町2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.560722306, 35.667865405]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112840_2",
-        "fid": "50241-12840-i-4852",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺東町3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.563780947999987, 35.667762167]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112840_3",
-        "fid": "50241-12840-i-4853",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺東町4丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.561815083999988, 35.671790601]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112843_1",
-        "fid": "50241-12843-i-1758",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺東町7丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.560062087, 35.678365296]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024712840_3",
-        "fid": "50247-12840-i-3633",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "緑ケ丘1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.580137294, 35.669094574]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5025012840_3",
-        "fid": "50250-12840-i-3072",
-        "lfSpanFr": "2020-08-13",
-        "lfSpanTo": null,
-        "devDate": "2022-10-03",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "緑ケ丘2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.585907271999986, 35.668155279]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022612831_1",
-        "fid": "50226-12831-i-1683",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "上石原",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.521742442, 35.647989499]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022612834_1",
-        "fid": "50226-12834-i-3794",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "上石原3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.523980942, 35.65184027]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022612834_2",
-        "fid": "50226-12834-i-3795",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "飛田給3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.520612695000011, 35.655918378]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022612837_2",
-        "fid": "50226-12837-i-3064",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "飛田給2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.52255365900001, 35.658744379]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022612837_3",
-        "fid": "50226-12837-i-3065",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "飛田給1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.524107461, 35.661839899]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022912831_1",
-        "fid": "50229-12831-i-1983",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "下石原",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.526922584, 35.644024572]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022912831_2",
-        "fid": "50229-12831-i-1984",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "多摩川3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.53103792600001, 35.645825901]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022912831_3",
-        "fid": "50229-12831-i-1985",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "多摩川2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.526762069, 35.647506183]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022912831_4",
-        "fid": "50229-12831-i-1986",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "多摩川1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.529296099, 35.649988219]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022912834_1",
-        "fid": "50229-12834-i-3391",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "下石原3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.53284935, 35.651222916]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022912834_2",
-        "fid": "50229-12834-i-3392",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "上石原2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.527994137, 35.655830934]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5022912837_1",
-        "fid": "50229-12837-i-1886",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "上石原1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.530326169, 35.659237363]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212828_3",
-        "fid": "50232-12828-i-3477",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "小島町",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.537967539, 35.640211996]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212831_1",
-        "fid": "50232-12831-i-3650",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "多摩川5丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.537324746, 35.643567602]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212831_2",
-        "fid": "50232-12831-i-3651",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "多摩川4丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.534133957, 35.644072291]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212831_3",
-        "fid": "50232-12831-i-3652",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "小島町3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.538835863, 35.647780587]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212834_1",
-        "fid": "50232-12834-i-3399",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "小島町2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.540565604, 35.651333675]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212834_2",
-        "fid": "50232-12834-i-3400",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "下石原2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.534412485, 35.653771144]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212834_3",
-        "fid": "50232-12834-i-3401",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "小島町1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.541599596, 35.654401995]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212834_4",
-        "fid": "50232-12834-i-3402",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "下石原1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.535938355000013, 35.65641805]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212837_1",
-        "fid": "50232-12837-i-3148",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "富士見町2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.540405798, 35.658667081]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212837_2",
-        "fid": "50232-12837-i-3149",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "富士見町1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.535555464, 35.660451675]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212837_3",
-        "fid": "50232-12837-i-3150",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "富士見町3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.540413541, 35.662589327]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023212837_4",
-        "fid": "50232-12837-i-3151",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "富士見町4丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.535749929, 35.665308815]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512828_3",
-        "fid": "50235-12828-i-3108",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "下布田町",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.549603051, 35.636525517]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512828_4",
-        "fid": "50235-12828-i-3109",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "上布田町",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.544122476000013, 35.638639326]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512828_5",
-        "fid": "50235-12828-i-3110",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "多摩川7丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.541671042, 35.641422894]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512831_1",
-        "fid": "50235-12831-i-4431",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "染地1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.547475487000014, 35.642308187]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512831_2",
-        "fid": "50235-12831-i-4432",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "多摩川6丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.541768291000011, 35.643467181]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512831_3",
-        "fid": "50235-12831-i-4433",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "布田6丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.548083940999987, 35.645333178]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512831_4",
-        "fid": "50235-12831-i-4434",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "布田5丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.543626239, 35.646006844]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512831_5",
-        "fid": "50235-12831-i-4435",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "布田3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.548504947999987, 35.648831883]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512831_6",
-        "fid": "50235-12831-i-4436",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "布田4丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.544901977, 35.649894539]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512834_1",
-        "fid": "50235-12834-i-3401",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "布田2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.549156434, 35.652243389]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512834_2",
-        "fid": "50235-12834-i-3402",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "布田1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.545678802, 35.653298922]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512834_3",
-        "fid": "50235-12834-i-3403",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "調布ケ丘2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.549746436, 35.655177287]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512834_4",
-        "fid": "50235-12834-i-3404",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "調布ケ丘1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.545255430999987, 35.657143528]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512837_1",
-        "fid": "50235-12837-i-4467",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "調布ケ丘3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.549077278, 35.659060716]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512837_2",
-        "fid": "50235-12837-i-4468",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "調布ケ丘4丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.544717405, 35.661434022]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512837_3",
-        "fid": "50235-12837-i-4469",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺元町1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.545348736, 35.663660553]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023512837_4",
-        "fid": "50235-12837-i-4470",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺元町3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.546298615000012, 35.665952905]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812828_1",
-        "fid": "50238-12828-i-2201",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "国領町",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.556560795, 35.635246432]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812828_2",
-        "fid": "50238-12828-i-2202",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "染地2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.552004188000012, 35.640530074]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812831_1",
-        "fid": "50238-12831-i-5021",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "国領町6丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.553435928999988, 35.644891625]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812831_2",
-        "fid": "50238-12831-i-5022",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "国領町4丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.558219856, 35.647210261]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812831_3",
-        "fid": "50238-12831-i-5023",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "国領町5丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.553354215000013, 35.647771996]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812834_1",
-        "fid": "50238-12834-i-3947",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "国領町1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.554071122000011, 35.651307932]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812834_2",
-        "fid": "50238-12834-i-3948",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "八雲台1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.554144915, 35.654480119]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812834_3",
-        "fid": "50238-12834-i-3949",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "佐須町3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.553975079, 35.657102006]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812834_4",
-        "fid": "50238-12834-i-3950",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "佐須町4丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.558190452, 35.657942014]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812837_1",
-        "fid": "50238-12837-i-4782",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "佐須町2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.554035049, 35.659939247]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812837_2",
-        "fid": "50238-12837-i-4783",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "佐須町1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.551526677, 35.661593324]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812837_3",
-        "fid": "50238-12837-i-4784",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺南町2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.557930457999987, 35.662293796]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812837_4",
-        "fid": "50238-12837-i-4785",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺南町1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.555395684, 35.662243247]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812837_5",
-        "fid": "50238-12837-i-4786",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺元町2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.550232416, 35.664392555]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5023812837_6",
-        "fid": "50238-12837-i-4787",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺南町4丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.555806161, 35.665192614]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112828_1",
-        "fid": "50241-12828-i-4082",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "染地3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.5591717, 35.639406687]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112831_1",
-        "fid": "50241-12831-i-3878",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "国領町7丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.560604288, 35.64401322]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112831_2",
-        "fid": "50241-12831-i-3879",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "国領町8丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.56484507, 35.647837891]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112831_3",
-        "fid": "50241-12831-i-3880",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "国領町3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.561110488999987, 35.649812513]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112834_1",
-        "fid": "50241-12834-i-4154",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "国領町2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.559334301, 35.651740901]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112834_2",
-        "fid": "50241-12834-i-4155",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "菊野台2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.566544732000011, 35.65164849]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112834_3",
-        "fid": "50241-12834-i-4156",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "八雲台2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.559070152, 35.653718923]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112834_4",
-        "fid": "50241-12834-i-4157",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "菊野台1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.566356568, 35.655660817]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112834_5",
-        "fid": "50241-12834-i-4158",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "柴崎1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.562779218, 35.657046029]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112837_1",
-        "fid": "50241-12837-i-3573",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "佐須町5丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.560497731, 35.661515952]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112837_2",
-        "fid": "50241-12837-i-3574",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "柴崎2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.564707586, 35.662290782]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024112837_3",
-        "fid": "50241-12837-i-3575",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "深大寺南町3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.560743148, 35.664437328]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024412834_1",
-        "fid": "50244-12834-i-4350",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "菊野台3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.570583266999989, 35.652510863]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024412834_2",
-        "fid": "50244-12834-i-4351",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "西つつじケ丘3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.572100185000011, 35.657648755]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024412837_1",
-        "fid": "50244-12837-i-4820",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "西つつじケ丘2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.572863668999986, 35.661744202]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024412837_2",
-        "fid": "50244-12837-i-4821",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "西つつじケ丘1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.569257490000012, 35.66062542]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024712834_1",
-        "fid": "50247-12834-i-4303",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "東つつじケ丘3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.580405389, 35.653028591]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024712834_2",
-        "fid": "50247-12834-i-4304",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "西つつじケ丘4丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.575804577000014, 35.653127842]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024712834_3",
-        "fid": "50247-12834-i-4305",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "東つつじケ丘2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.578015721000014, 35.65709246]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024712834_4",
-        "fid": "50247-12834-i-4306",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "若葉町1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.582711550999989, 35.658118296]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024712837_2",
-        "fid": "50247-12837-i-4167",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "東つつじケ丘1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.577714065, 35.660056241]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5024712837_3",
-        "fid": "50247-12837-i-4168",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "仙川町2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.581186581999987, 35.662774956]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5025012831_2",
-        "fid": "50250-12831-i-5017",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "入間町3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.590139957, 35.647430836]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5025012831_3",
-        "fid": "50250-12831-i-5018",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "入間町2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.584962429, 35.649063786]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5025012834_1",
-        "fid": "50250-12834-i-4460",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "入間町1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.589323834, 35.652697558]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5025012834_2",
-        "fid": "50250-12834-i-4461",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "若葉町3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.584148234999986, 35.65430118]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5025012834_3",
-        "fid": "50250-12834-i-4462",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "若葉町2丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.58814483, 35.657192157]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5025012837_2",
-        "fid": "50250-12837-i-5509",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "仙川町1丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.5863182, 35.660991434]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "gml_id": "K8_5025012837_3",
-        "fid": "50250-12837-i-5510",
-        "lfSpanFr": "2021-06-03",
-        "lfSpanTo": null,
-        "devDate": "2023-01-05",
-        "orgGILvl": "2500",
-        "orgMDId": null,
-        "vis": "表示",
-        "type": "大字・町・丁目",
-        "name": "仙川町3丁目",
-        "admCode": "13208"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.585217689, 35.664511041]
-      }
-    }
-  ]
+    "type": "FeatureCollection",
+    "name": "Chofu-city-name",
+    "crs": {
+        "type": "name",
+        "properties": { "name": "urn:ogc:def:crs:EPSG::6668" }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022612843_3",
+                "fid": "50226-12843-i-2332",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "野水1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.524348663000012, 35.682138038]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022612846_3",
+                "fid": "50226-12846-i-3011",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "野水2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.524477342000012, 35.685907692]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022912840_1",
+                "fid": "50229-12840-i-1166",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "西町",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.528201238, 35.66813008]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512840_1",
+                "fid": "50235-12840-i-6795",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺元町5丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.549422602, 35.669398766]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512840_2",
+                "fid": "50235-12840-i-6796",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺元町4丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.543251242, 35.669971805]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512840_3",
+                "fid": "50235-12840-i-6797",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺北町1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.547484716000014, 35.674254048]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512840_4",
+                "fid": "50235-12840-i-6798",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺北町7丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.543886504, 35.674785605]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512843_1",
+                "fid": "50235-12843-i-3351",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺北町3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.549737932, 35.676594271]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512843_2",
+                "fid": "50235-12843-i-3352",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺北町5丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.549967018, 35.678937743]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512843_3",
+                "fid": "50235-12843-i-3353",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺北町6丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.545401219000013, 35.679102819]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812840_1",
+                "fid": "50238-12840-i-4014",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺南町5丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.557100259, 35.667405871]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812840_2",
+                "fid": "50238-12840-i-4015",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺東町1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.557823418999988, 35.670237244]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812840_3",
+                "fid": "50238-12840-i-4016",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺東町5丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.555873457, 35.67355041]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812840_4",
+                "fid": "50238-12840-i-4017",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺北町2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.552393218, 35.673171844]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812843_2",
+                "fid": "50238-12843-i-3553",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺東町6丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.55780140600001, 35.675212248]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812843_3",
+                "fid": "50238-12843-i-3554",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺北町4丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.552954948, 35.679400484]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812843_4",
+                "fid": "50238-12843-i-3555",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺東町8丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.555779682, 35.680208798]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112840_1",
+                "fid": "50241-12840-i-4851",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺東町2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.560722306, 35.667865405]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112840_2",
+                "fid": "50241-12840-i-4852",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺東町3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.563780947999987, 35.667762167]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112840_3",
+                "fid": "50241-12840-i-4853",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺東町4丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.561815083999988, 35.671790601]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112843_1",
+                "fid": "50241-12843-i-1758",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺東町7丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.560062087, 35.678365296]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024712840_3",
+                "fid": "50247-12840-i-3633",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "緑ケ丘1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.580137294, 35.669094574]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5025012840_3",
+                "fid": "50250-12840-i-3072",
+                "lfSpanFr": "2020-08-13",
+                "lfSpanTo": null,
+                "devDate": "2022-10-03",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "緑ケ丘2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.585907271999986, 35.668155279]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022612831_1",
+                "fid": "50226-12831-i-1683",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "上石原",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.521742442, 35.647989499]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022612834_1",
+                "fid": "50226-12834-i-3794",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "上石原3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.523980942, 35.65184027]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022612834_2",
+                "fid": "50226-12834-i-3795",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "飛田給3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.520612695000011, 35.655918378]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022612837_2",
+                "fid": "50226-12837-i-3064",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "飛田給2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.52255365900001, 35.658744379]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022612837_3",
+                "fid": "50226-12837-i-3065",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "飛田給1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.524107461, 35.661839899]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022912831_1",
+                "fid": "50229-12831-i-1983",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "下石原",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.526922584, 35.644024572]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022912831_2",
+                "fid": "50229-12831-i-1984",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "多摩川3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.53103792600001, 35.645825901]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022912831_3",
+                "fid": "50229-12831-i-1985",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "多摩川2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.526762069, 35.647506183]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022912831_4",
+                "fid": "50229-12831-i-1986",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "多摩川1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.529296099, 35.649988219]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022912834_1",
+                "fid": "50229-12834-i-3391",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "下石原3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.53284935, 35.651222916]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022912834_2",
+                "fid": "50229-12834-i-3392",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "上石原2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.527994137, 35.655830934]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5022912837_1",
+                "fid": "50229-12837-i-1886",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "上石原1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.530326169, 35.659237363]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212828_3",
+                "fid": "50232-12828-i-3477",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "小島町",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.537967539, 35.640211996]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212831_1",
+                "fid": "50232-12831-i-3650",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "多摩川5丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.537324746, 35.643567602]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212831_2",
+                "fid": "50232-12831-i-3651",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "多摩川4丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.534133957, 35.644072291]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212831_3",
+                "fid": "50232-12831-i-3652",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "小島町3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.538835863, 35.647780587]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212834_1",
+                "fid": "50232-12834-i-3399",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "小島町2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.540565604, 35.651333675]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212834_2",
+                "fid": "50232-12834-i-3400",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "下石原2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.534412485, 35.653771144]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212834_3",
+                "fid": "50232-12834-i-3401",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "小島町1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.541599596, 35.654401995]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212834_4",
+                "fid": "50232-12834-i-3402",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "下石原1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.535938355000013, 35.65641805]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212837_1",
+                "fid": "50232-12837-i-3148",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "富士見町2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.540405798, 35.658667081]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212837_2",
+                "fid": "50232-12837-i-3149",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "富士見町1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.535555464, 35.660451675]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212837_3",
+                "fid": "50232-12837-i-3150",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "富士見町3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.540413541, 35.662589327]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023212837_4",
+                "fid": "50232-12837-i-3151",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "富士見町4丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.535749929, 35.665308815]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512828_3",
+                "fid": "50235-12828-i-3108",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "下布田町",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.549603051, 35.636525517]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512828_4",
+                "fid": "50235-12828-i-3109",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "上布田町",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.544122476000013, 35.638639326]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512828_5",
+                "fid": "50235-12828-i-3110",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "多摩川7丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.541671042, 35.641422894]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512831_1",
+                "fid": "50235-12831-i-4431",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "染地1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.547475487000014, 35.642308187]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512831_2",
+                "fid": "50235-12831-i-4432",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "多摩川6丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.541768291000011, 35.643467181]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512831_3",
+                "fid": "50235-12831-i-4433",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "布田6丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.548083940999987, 35.645333178]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512831_4",
+                "fid": "50235-12831-i-4434",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "布田5丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.543626239, 35.646006844]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512831_5",
+                "fid": "50235-12831-i-4435",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "布田3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.548504947999987, 35.648831883]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512831_6",
+                "fid": "50235-12831-i-4436",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "布田4丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.544901977, 35.649894539]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512834_1",
+                "fid": "50235-12834-i-3401",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "布田2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.549156434, 35.652243389]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512834_2",
+                "fid": "50235-12834-i-3402",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "布田1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.545678802, 35.653298922]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512834_3",
+                "fid": "50235-12834-i-3403",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "調布ケ丘2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.549746436, 35.655177287]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512834_4",
+                "fid": "50235-12834-i-3404",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "調布ケ丘1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.545255430999987, 35.657143528]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512837_1",
+                "fid": "50235-12837-i-4467",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "調布ケ丘3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.549077278, 35.659060716]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512837_2",
+                "fid": "50235-12837-i-4468",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "調布ケ丘4丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.544717405, 35.661434022]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512837_3",
+                "fid": "50235-12837-i-4469",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺元町1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.545348736, 35.663660553]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023512837_4",
+                "fid": "50235-12837-i-4470",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺元町3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.546298615000012, 35.665952905]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812828_1",
+                "fid": "50238-12828-i-2201",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "国領町",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.556560795, 35.635246432]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812828_2",
+                "fid": "50238-12828-i-2202",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "染地2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.552004188000012, 35.640530074]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812831_1",
+                "fid": "50238-12831-i-5021",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "国領町6丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.553435928999988, 35.644891625]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812831_2",
+                "fid": "50238-12831-i-5022",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "国領町4丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.558219856, 35.647210261]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812831_3",
+                "fid": "50238-12831-i-5023",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "国領町5丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.553354215000013, 35.647771996]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812834_1",
+                "fid": "50238-12834-i-3947",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "国領町1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.554071122000011, 35.651307932]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812834_2",
+                "fid": "50238-12834-i-3948",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "八雲台1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.554144915, 35.654480119]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812834_3",
+                "fid": "50238-12834-i-3949",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "佐須町3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.553975079, 35.657102006]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812834_4",
+                "fid": "50238-12834-i-3950",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "佐須町4丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.558190452, 35.657942014]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812837_1",
+                "fid": "50238-12837-i-4782",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "佐須町2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.554035049, 35.659939247]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812837_2",
+                "fid": "50238-12837-i-4783",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "佐須町1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.551526677, 35.661593324]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812837_3",
+                "fid": "50238-12837-i-4784",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺南町2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.557930457999987, 35.662293796]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812837_4",
+                "fid": "50238-12837-i-4785",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺南町1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.555395684, 35.662243247]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812837_5",
+                "fid": "50238-12837-i-4786",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺元町2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.550232416, 35.664392555]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5023812837_6",
+                "fid": "50238-12837-i-4787",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺南町4丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.555806161, 35.665192614]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112828_1",
+                "fid": "50241-12828-i-4082",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "染地3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.5591717, 35.639406687]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112831_1",
+                "fid": "50241-12831-i-3878",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "国領町7丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.560604288, 35.64401322]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112831_2",
+                "fid": "50241-12831-i-3879",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "国領町8丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.56484507, 35.647837891]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112831_3",
+                "fid": "50241-12831-i-3880",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "国領町3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.561110488999987, 35.649812513]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112834_1",
+                "fid": "50241-12834-i-4154",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "国領町2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.559334301, 35.651740901]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112834_2",
+                "fid": "50241-12834-i-4155",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "菊野台2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.566544732000011, 35.65164849]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112834_3",
+                "fid": "50241-12834-i-4156",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "八雲台2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.559070152, 35.653718923]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112834_4",
+                "fid": "50241-12834-i-4157",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "菊野台1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.566356568, 35.655660817]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112834_5",
+                "fid": "50241-12834-i-4158",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "柴崎1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.562779218, 35.657046029]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112837_1",
+                "fid": "50241-12837-i-3573",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "佐須町5丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.560497731, 35.661515952]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112837_2",
+                "fid": "50241-12837-i-3574",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "柴崎2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.564707586, 35.662290782]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024112837_3",
+                "fid": "50241-12837-i-3575",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "深大寺南町3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.560743148, 35.664437328]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024412834_1",
+                "fid": "50244-12834-i-4350",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "菊野台3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.570583266999989, 35.652510863]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024412834_2",
+                "fid": "50244-12834-i-4351",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "西つつじケ丘3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.572100185000011, 35.657648755]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024412837_1",
+                "fid": "50244-12837-i-4820",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "西つつじケ丘2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.572863668999986, 35.661744202]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024412837_2",
+                "fid": "50244-12837-i-4821",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "西つつじケ丘1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.569257490000012, 35.66062542]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024712834_1",
+                "fid": "50247-12834-i-4303",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "東つつじケ丘3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.580405389, 35.653028591]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024712834_2",
+                "fid": "50247-12834-i-4304",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "西つつじケ丘4丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.575804577000014, 35.653127842]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024712834_3",
+                "fid": "50247-12834-i-4305",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "東つつじケ丘2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.578015721000014, 35.65709246]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024712834_4",
+                "fid": "50247-12834-i-4306",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "若葉町1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.582711550999989, 35.658118296]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024712837_2",
+                "fid": "50247-12837-i-4167",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "東つつじケ丘1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.577714065, 35.660056241]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5024712837_3",
+                "fid": "50247-12837-i-4168",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "仙川町2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.581186581999987, 35.662774956]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5025012831_2",
+                "fid": "50250-12831-i-5017",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "入間町3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.590139957, 35.647430836]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5025012831_3",
+                "fid": "50250-12831-i-5018",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "入間町2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.584962429, 35.649063786]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5025012834_1",
+                "fid": "50250-12834-i-4460",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "入間町1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.589323834, 35.652697558]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5025012834_2",
+                "fid": "50250-12834-i-4461",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "若葉町3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.584148234999986, 35.65430118]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5025012834_3",
+                "fid": "50250-12834-i-4462",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "若葉町2丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.58814483, 35.657192157]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5025012837_2",
+                "fid": "50250-12837-i-5509",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "仙川町1丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.5863182, 35.660991434]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "gml_id": "K8_5025012837_3",
+                "fid": "50250-12837-i-5510",
+                "lfSpanFr": "2021-06-03",
+                "lfSpanTo": null,
+                "devDate": "2023-01-05",
+                "orgGILvl": "2500",
+                "orgMDId": null,
+                "vis": "表示",
+                "type": "大字・町・丁目",
+                "name": "仙川町3丁目",
+                "admCode": "13208"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [139.585217689, 35.664511041]
+            }
+        }
+    ]
 }
