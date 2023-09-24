@@ -14,17 +14,15 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-// import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = [
-    // { item: "Home", link: "./" },
-    { item: "Map", link: "./map" },
-    { item: "Filter", link: "./filter" },
-    // { item: "About", link: "./about" },
+    { item: "Map", link: "./map", target: "_self" },
+    { item: "Filter", link: "./filter", target: "_self" },
     {
         item: "GitHub",
         link: "https://github.com/Shirashoji/chofu-population-vis",
+        target: "_blank",
     },
 ];
 
@@ -42,12 +40,13 @@ function Navigation(props) {
             </Typography>
             <Divider />
             <List>
-                {navItems.map(({ item, link }) => (
+                {navItems.map(({ item, link, target }) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton
                             sx={{ textAlign: "center" }}
                             component="a"
                             href={link}
+                            target={target}
                         >
                             <ListItemText primary={item} />
                         </ListItemButton>

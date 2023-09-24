@@ -24,7 +24,6 @@ export default function Pyramid(props) {
     const width = displayWidth - margin.left - margin.right;
     const height = displayHeight - margin.top - margin.bottom;
 
-    // const title = `${town}の人口ピラミッド`;
     const townList = data.map((item) => item.town);
     if (!townList.includes(town)) {
         return <HumanNotFound town={town} />;
@@ -96,7 +95,7 @@ export default function Pyramid(props) {
                                     y2={-height}
                                     stroke={"lightgray"}
                                 />
-                                {/* ウインドウサイズを変更に対応させる時にこの部分を文字幅に応じて縦書きにする */}
+
                                 <text
                                     x={0}
                                     y={i % 2 == 0 ? 20 : 35}
@@ -198,6 +197,20 @@ export default function Pyramid(props) {
                                 textAnchor="middle"
                                 dominantBaseline="central"
                                 fill={textCol}
+                                onMouseEnter={(e) => {
+                                    setPos({ x: e.pageX, y: e.pageY });
+                                    setToolCat({
+                                        ageGroup: d,
+                                        town: town,
+                                        gender: "both",
+                                    });
+                                }}
+                                onMouseLeave={(e) => {
+                                    setToolCat(null);
+                                }}
+                                onPointerMove={(e) => {
+                                    setPos({ x: e.pageX, y: e.pageY });
+                                }}
                             >
                                 {d}
                             </text>
@@ -206,10 +219,6 @@ export default function Pyramid(props) {
                 })}
             </g>
         );
-    };
-
-    const tooltip = (d) => {
-        // const ageGroup = d.ageGroup === "100+" ? d.ageGroup.replace("-", "〜");
     };
 
     const createBar = (data) => {
@@ -236,6 +245,7 @@ export default function Pyramid(props) {
                                         : "crimson"
                                 }
                                 onMouseEnter={(e) => {
+                                    setPos({ x: e.pageX, y: e.pageY });
                                     setToolCat({
                                         ageGroup: d.ageGroup,
                                         town: town,
@@ -273,6 +283,7 @@ export default function Pyramid(props) {
                                         : "royalblue"
                                 }
                                 onMouseEnter={(e) => {
+                                    setPos({ x: e.pageX, y: e.pageY });
                                     setToolCat({
                                         ageGroup: d.ageGroup,
                                         town: town,
@@ -300,8 +311,6 @@ export default function Pyramid(props) {
     return (
         <>
             <svg
-                // width={displayWidth}
-                // height={displayHeight}
                 viewBox={`0 0 ${displayWidth} ${displayHeight}`}
                 style={{
                     userSelect: "none",
@@ -311,9 +320,6 @@ export default function Pyramid(props) {
                     {hor()}
                     {vert()}
                     {createBar(populationData)}
-                    {/* <g transform={`translate(${width + 20}, 0)`}>
-            {createLegend(categories)}
-          </g> */}
                 </g>
             </svg>
             <Tooltip

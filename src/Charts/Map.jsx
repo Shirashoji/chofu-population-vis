@@ -99,6 +99,7 @@ export default function Map(props) {
                         strokeWidth="4"
                         strokeOpacity="1"
                         onMouseEnter={(e) => {
+                            setPos({ x: e.pageX, y: e.pageY });
                             if (!selected) {
                                 setTown(d.properties.name);
                             }
@@ -145,14 +146,13 @@ export default function Map(props) {
 
     return (
         <div className="Map">
-            {/* <svg width={width} height={height}> */}
             <svg viewBox={`0 0 ${width} ${height}`}>
                 <defs>
                     <linearGradient id="Gradient" x1="0" x2="1" y1="0" y2="0">
                         {Array.from({ length: 101 }, (_, i) => i / 100).map(
                             (tick, i) => (
                                 <stop
-                                    key={`gadient-${i}`}
+                                    key={`gradient-${i}`}
                                     offset={`${i}%`}
                                     stopColor={mapColors(tick)}
                                 />
@@ -208,6 +208,27 @@ export default function Map(props) {
                                     if (!selected) {
                                         setTown(d.properties.name);
                                     }
+                                    setToolInfo(
+                                        feature.length === 0
+                                            ? null
+                                            : feature.filter(
+                                                  (e) =>
+                                                      e.town ===
+                                                      d.properties.name
+                                              ).length > 0
+                                            ? tooltipTemplate(
+                                                  d.properties.name,
+                                                  featScale(
+                                                      feature.filter(
+                                                          (e) =>
+                                                              e.town ===
+                                                              d.properties.name
+                                                      )[0].value
+                                                  )
+                                              )
+                                            : tooltipTemplate("無人地域")
+                                    );
+                                    setPos({ x: e.pageX, y: e.pageY });
                                 }}
                                 onMouseLeave={(e) => {
                                     if (!selected) {
@@ -233,6 +254,7 @@ export default function Map(props) {
                     height={21}
                     fill="gray"
                     onMouseEnter={(e) => {
+                        setPos({ x: e.pageX, y: e.pageY });
                         setToolInfo(tooltipTemplate("地域特徴度"));
                     }}
                     onMouseLeave={(e) => {
@@ -249,6 +271,7 @@ export default function Map(props) {
                     height={17}
                     fill="url(#Gradient)"
                     onMouseEnter={(e) => {
+                        setPos({ x: e.pageX, y: e.pageY });
                         setToolInfo(tooltipTemplate("地域特徴度"));
                     }}
                     onMouseLeave={(e) => {
@@ -285,7 +308,7 @@ export default function Map(props) {
                     dominantBaseline="text-top"
                     fontSize="95%"
                     onMouseEnter={(e) => {
-                        setToolInfo(tooltipTemplate("無人地域"));
+                        setPos({ x: e.pageX, y: e.pageY });
                         setToolInfo(tooltipTemplate("地域特徴度"));
                     }}
                     onMouseLeave={(e) => {
@@ -305,6 +328,7 @@ export default function Map(props) {
                     dominantBaseline="text-top"
                     fontSize="95%"
                     onMouseEnter={(e) => {
+                        setPos({ x: e.pageX, y: e.pageY });
                         setToolInfo(tooltipTemplate("無人地域"));
                     }}
                     onMouseLeave={(e) => {
@@ -323,6 +347,7 @@ export default function Map(props) {
                     height={21}
                     fill="gray"
                     onMouseEnter={(e) => {
+                        setPos({ x: e.pageX, y: e.pageY });
                         setToolInfo(tooltipTemplate("無人地域"));
                     }}
                     onMouseLeave={(e) => {

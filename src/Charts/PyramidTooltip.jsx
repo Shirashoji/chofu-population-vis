@@ -29,10 +29,50 @@ function Tooltip(props) {
         tooltipStyle.left = pos.x - 370;
     }
 
-    if (["0-4", "5-9", "10-14", "15-19", "20-24"].includes(toolCat.ageGroup)) {
-        tooltipStyle.top = pos.y - 260;
+    if (
+        [
+            "0-4",
+            "5-9",
+            "10-14",
+            "15-19",
+            "20-24",
+            "25-29",
+            "30-34",
+            "35-39",
+        ].includes(toolCat.ageGroup)
+    ) {
+        if (toolCat.gender === "both") {
+            tooltipStyle.top = pos.y - 275;
+        } else {
+            tooltipStyle.top = pos.y - 200;
+        }
     } else {
         tooltipStyle.top = pos.y + 10;
+    }
+
+    console.log(toolCat);
+
+    if (toolCat.gender === "both") {
+        return (
+            <div style={tooltipStyle}>
+                <Card sx={{ width: 360 }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            {`${
+                                toolCat.ageGroup === "100+"
+                                    ? "100歳以上"
+                                    : `${toolCat.ageGroup.replace("-", "~")}歳`
+                            }`}
+                        </Typography>
+                    </CardContent>
+                    <CardActionArea>
+                        <CardActions>
+                            <BothTable data={data} categories={toolCat} />
+                        </CardActions>
+                    </CardActionArea>
+                </Card>
+            </div>
+        );
     }
 
     return (
@@ -63,8 +103,6 @@ function InfoTable(props) {
         return { label, value };
     }
 
-    const townList = data.map((item) => item.town);
-
     const populationData = data.filter(
         (item) => item.town === categories.town
     )[0].data;
@@ -91,12 +129,69 @@ function InfoTable(props) {
         ),
     ];
     return (
-        <TableContainer component={Paper}>
+        <TableContainer>
+            <Table sx={{ minWidth: 300 }} aria-label="simple table">
+                <TableBody>
+                    {rows.map((row) => (
+                        <TableRow
+                            key={row.label}
+                            sx={{
+                                "&:last-child td, &:last-child th": {
+                                    border: 0,
+                                },
+                            }}
+                        >
+                            <TableCell component="th" scope="row">
+                                {row.label}
+                            </TableCell>
+                            <TableCell align="right">{row.value}</TableCell>
+                        </TableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
+function BothTable(props) {
+    const { data, categories } = props;
+    function createData(label, male, female) {
+        return { label, male, female };
+    }
+
+    const populationData = data.filter(
+        (item) => item.town === categories.town
+    )[0].data;
+
+    const populationSum = populationData
+        .map((e) => [e.male, e.female])
+        .flat()
+        .reduce((sum, element) => sum + element, 0);
+
+    const malePopulation = populationData.filter(
+        (item) => item.ageGroup === categories.ageGroup
+    )[0]["male"];
+
+    const femalePopulation = populationData.filter(
+        (item) => item.ageGroup === categories.ageGroup
+    )[0]["female"];
+
+    const rows = [
+        createData("人数(人)", malePopulation, femalePopulation),
+        createData(
+            "この地域における割合(%)",
+            d3.format(".4f")((malePopulation / populationSum) * 100),
+            d3.format(".4f")((femalePopulation / populationSum) * 100)
+        ),
+    ];
+    return (
+        <TableContainer>
             <Table sx={{ minWidth: 300 }} aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell>種類</TableCell>
-                        <TableCell align="right">値</TableCell>
+                        <TableCell>項目</TableCell>
+                        <TableCell align="right">男性</TableCell>
+                        <TableCell align="right">女性</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -112,7 +207,8 @@ function InfoTable(props) {
                             <TableCell component="th" scope="row">
                                 {row.label}
                             </TableCell>
-                            <TableCell align="right">{row.value}</TableCell>
+                            <TableCell align="right">{row.male}</TableCell>
+                            <TableCell align="right">{row.female}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
