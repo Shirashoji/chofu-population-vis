@@ -21,7 +21,6 @@ export default function Selections(props) {
             <div>
                 <br />
                 <Autocomplete
-                    autoWidth
                     value={value}
                     onChange={(event, newValue) => {
                         setValue(newValue);
