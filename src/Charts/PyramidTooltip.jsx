@@ -50,7 +50,6 @@ function Tooltip(props) {
         tooltipStyle.top = pos.y + 10;
     }
 
-    console.log(toolCat);
 
     if (toolCat.gender === "both") {
         return (
