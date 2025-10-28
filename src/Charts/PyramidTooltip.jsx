@@ -1,94 +1,98 @@
-import Paper from "@mui/material/Paper";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
-
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-
 import * as d3 from "d3";
+import { useMemo } from "react";
 
-function Tooltip(props) {
-    const { pos, data, toolCat, pyramidSize } = props;
+const CURSOR_OFFSET = 10;
+const TOOLTIP_WIDTH = 360;
+const Y_OFFSET_TOP = 275;
+const Y_OFFSET_BOTTOM = 200;
 
-    if (data === null || toolCat === null) return null;
+const YOUNG_AGE_GROUPS = [
+    "0-4",
+    "5-9",
+    "10-14",
+    "15-19",
+    "20-24",
+    "25-29",
+    "30-34",
+    "35-39",
+];
+
+function useTooltipPosition(pos, toolCat) {
+    const isYoung = useMemo(
+        () => YOUNG_AGE_GROUPS.includes(toolCat?.ageGroup),
+        [toolCat?.ageGroup]
+    );
+
+    const left = useMemo(() => {
+        const rightEdge = pos.x + CURSOR_OFFSET + TOOLTIP_WIDTH;
+        const isOffScreen = rightEdge > window.innerWidth;
+        return isOffScreen
+            ? pos.x - TOOLTIP_WIDTH - CURSOR_OFFSET
+            : pos.x + CURSOR_OFFSET;
+    }, [pos.x]);
+
+    const top = useMemo(() => {
+        if (isYoung) {
+            return toolCat.gender === "both"
+                ? pos.y - Y_OFFSET_TOP
+                : pos.y - Y_OFFSET_BOTTOM;
+        }
+        return pos.y + CURSOR_OFFSET;
+    }, [pos.y, isYoung, toolCat?.gender]);
+
+    return { top, left };
+}
+
+function Tooltip({ pos, data, toolCat }) {
+    const { top, left } = useTooltipPosition(pos, toolCat);
+
+    if (!data || !toolCat) return null;
 
     const tooltipStyle = {
         position: "absolute",
+        top,
+        left,
     };
 
-    if (toolCat.gender === "male") {
-        tooltipStyle.left = pos.x + 10;
-    } else {
-        tooltipStyle.left = pos.x - 370;
-    }
-
-    if (
-        [
-            "0-4",
-            "5-9",
-            "10-14",
-            "15-19",
-            "20-24",
-            "25-29",
-            "30-34",
-            "35-39",
-        ].includes(toolCat.ageGroup)
-    ) {
-        if (toolCat.gender === "both") {
-            tooltipStyle.top = pos.y - 275;
-        } else {
-            tooltipStyle.top = pos.y - 200;
-        }
-    } else {
-        tooltipStyle.top = pos.y + 10;
-    }
-
-
-    if (toolCat.gender === "both") {
-        return (
-            <div style={tooltipStyle}>
-                <Card sx={{ width: 360 }}>
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            {`${
-                                toolCat.ageGroup === "100+"
-                                    ? "100歳以上"
-                                    : `${toolCat.ageGroup.replace("-", "~")}歳`
-                            }`}
-                        </Typography>
-                    </CardContent>
-                    <CardActionArea>
-                        <CardActions>
-                            <BothTable data={data} categories={toolCat} />
-                        </CardActions>
-                    </CardActionArea>
-                </Card>
-            </div>
-        );
-    }
+    const title =
+        toolCat.gender === "both"
+            ? `${
+                  toolCat.ageGroup === "100+"
+                      ? "100歳以上"
+                      : `${toolCat.ageGroup.replace("-", "~")}歳`
+              }`
+            : `${toolCat.gender === "male" ? "男性: " : "女性: "}${
+                  toolCat.ageGroup === "100+"
+                      ? "100歳以上"
+                      : `${toolCat.ageGroup.replace("-", "~")}歳`
+              }`;
 
     return (
         <div style={tooltipStyle}>
-            <Card sx={{ width: 360 }}>
+            <Card sx={{ width: TOOLTIP_WIDTH }}>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        {`${toolCat.gender === "male" ? "男性: " : "女性: "}${
-                            toolCat.ageGroup === "100+"
-                                ? "100歳以上"
-                                : `${toolCat.ageGroup.replace("-", "~")}歳`
-                        }`}
+                        {title}
                     </Typography>
                 </CardContent>
                 <CardActionArea>
                     <CardActions>
-                        <InfoTable data={data} categories={toolCat} />
+                        {toolCat.gender === "both" ? (
+                            <BothTable data={data} categories={toolCat} />
+                        ) : (
+                            <InfoTable data={data} categories={toolCat} />
+                        )}
                     </CardActions>
                 </CardActionArea>
             </Card>
@@ -96,37 +100,38 @@ function Tooltip(props) {
     );
 }
 
-function InfoTable(props) {
-    const { data, categories } = props;
-    function createData(label, value) {
-        return { label, value };
-    }
+function InfoTable({ data, categories }) {
+    const { town, ageGroup, gender } = categories;
 
-    const populationData = data.filter(
-        (item) => item.town === categories.town
-    )[0].data;
+    const populationData = useMemo(
+        () => data.find((item) => item.town === town)?.data || [],
+        [data, town]
+    );
 
-    const populationSum = populationData
-        .map((e) => [e.male, e.female])
-        .flat()
-        .reduce((sum, element) => sum + element, 0);
+    const populationSum = useMemo(
+        () =>
+            populationData
+                .flatMap((e) => [e.male, e.female])
+                .reduce((sum, element) => sum + element, 0),
+        [populationData]
+    );
 
-    const townPopulation = populationData.filter(
-        (item) => item.ageGroup === categories.ageGroup
-    )[0][categories.gender];
+    const townPopulation = useMemo(
+        () =>
+            populationData.find((item) => item.ageGroup === ageGroup)?.[
+                gender
+            ] || 0,
+        [populationData, ageGroup, gender]
+    );
 
     const rows = [
-        createData(
-            "人数(人)",
-            populationData.filter(
-                (item) => item.ageGroup === categories.ageGroup
-            )[0][categories.gender]
-        ),
-        createData(
-            "この地域における割合(%)",
-            d3.format(".4f")((townPopulation / populationSum) * 100)
-        ),
+        { label: "人数(人)", value: townPopulation },
+        {
+            label: "この地域における割合(%)",
+            value: d3.format(".4f")((townPopulation / populationSum) * 100),
+        },
     ];
+
     return (
         <TableContainer>
             <Table sx={{ minWidth: 300 }} aria-label="simple table">
@@ -152,37 +157,49 @@ function InfoTable(props) {
     );
 }
 
-function BothTable(props) {
-    const { data, categories } = props;
-    function createData(label, male, female) {
-        return { label, male, female };
-    }
+function BothTable({ data, categories }) {
+    const { town, ageGroup } = categories;
 
-    const populationData = data.filter(
-        (item) => item.town === categories.town
-    )[0].data;
+    const populationData = useMemo(
+        () => data.find((item) => item.town === town)?.data || [],
+        [data, town]
+    );
 
-    const populationSum = populationData
-        .map((e) => [e.male, e.female])
-        .flat()
-        .reduce((sum, element) => sum + element, 0);
+    const populationSum = useMemo(
+        () =>
+            populationData
+                .flatMap((e) => [e.male, e.female])
+                .reduce((sum, element) => sum + element, 0),
+        [populationData]
+    );
 
-    const malePopulation = populationData.filter(
-        (item) => item.ageGroup === categories.ageGroup
-    )[0]["male"];
+    const malePopulation = useMemo(
+        () =>
+            populationData.find((item) => item.ageGroup === ageGroup)?.male ||
+            0,
+        [populationData, ageGroup]
+    );
 
-    const femalePopulation = populationData.filter(
-        (item) => item.ageGroup === categories.ageGroup
-    )[0]["female"];
+    const femalePopulation = useMemo(
+        () =>
+            populationData.find((item) => item.ageGroup === ageGroup)
+                ?.female || 0,
+        [populationData, ageGroup]
+    );
 
     const rows = [
-        createData("人数(人)", malePopulation, femalePopulation),
-        createData(
-            "この地域における割合(%)",
-            d3.format(".4f")((malePopulation / populationSum) * 100),
-            d3.format(".4f")((femalePopulation / populationSum) * 100)
-        ),
+        {
+            label: "人数(人)",
+            male: malePopulation,
+            female: femalePopulation,
+        },
+        {
+            label: "この地域における割合(%)",
+            male: d3.format(".4f")((malePopulation / populationSum) * 100),
+            female: d3.format(".4f")((femalePopulation / populationSum) * 100),
+        },
     ];
+
     return (
         <TableContainer>
             <Table sx={{ minWidth: 300 }} aria-label="simple table">

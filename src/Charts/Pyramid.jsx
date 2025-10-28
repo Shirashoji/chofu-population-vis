@@ -315,6 +315,7 @@ export default function Pyramid(props) {
                 style={{
                     userSelect: "none",
                 }}
+                data-testid="pyramid-chart"
             >
                 <g transform={`translate(${margin.left}, ${margin.top})`}>
                     {hor()}
