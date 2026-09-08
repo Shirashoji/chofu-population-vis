@@ -32,6 +32,7 @@ export default function Map(props) {
   const path = geoPath().projection(projection);
   const [town, setTown] = React.useState("市内全域");
   const [selected, setSelect] = React.useState(false);
+  const [hoveredTown, setHoveredTown] = React.useState(null);
 
   useEffect(() => {
     if (town) setName(town);
@@ -184,10 +185,11 @@ export default function Map(props) {
                 key={i}
                 d={path(d)}
                 fill={fillCol}
-                stroke="#0e1724"
-                strokeWidth="1"
-                strokeOpacity="0.5"
+                stroke={selected && hoveredTown === d.properties.name ? "black" : "#0e1724"}
+                strokeWidth={selected && hoveredTown === d.properties.name ? "2" : "1"}
+                strokeOpacity={selected && hoveredTown === d.properties.name ? "1" : "0.5"}
                 onMouseEnter={(e) => {
+                  setHoveredTown(d.properties.name);
                   if (!selected) {
                     setTown(d.properties.name);
                   }
@@ -209,6 +211,7 @@ export default function Map(props) {
                   setPos({ x: e.pageX, y: e.pageY });
                 }}
                 onMouseLeave={(e) => {
+                  setHoveredTown(null);
                   if (!selected) {
                     setTown("市内全域");
                   }
