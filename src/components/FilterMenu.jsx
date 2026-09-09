@@ -9,7 +9,7 @@ import Pyramid from "../Charts/Pyramid.jsx";
 import { fetchPopulation } from "../APIs/fetchPopulation.js";
 
 export default function FilterMenu() {
-    const years = ["2021", "2020", "2019", "2018", "2017"];
+    const years = ["2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017"];
     const [year, setYear] = React.useState(years[0]);
     const [data, setData] = React.useState([]);
     const [townList, setTownList] = React.useState([]);
