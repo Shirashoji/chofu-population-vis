@@ -31,7 +31,7 @@ export default function MapMenu() {
         <div className="App">
             <Box
                 sx={{
-                    width: "100vw",
+                    width: "100%",
                 }}
             >
                 <Grid
@@ -41,11 +41,7 @@ export default function MapMenu() {
                     justifyContent="center"
                     alignItems="center"
                 >
-                    <Box
-                        sx={{
-                            width: "500px",
-                        }}
-                    >
+                    <Grid item xs={12} md={5}>
                         <Grid
                             container
                             direction="column"
@@ -61,10 +57,9 @@ export default function MapMenu() {
 
                             <Box
                                 sx={{
-                                    width: "500px",
+                                    width: "100%",
                                     pt: 2,
-                                    maxWidth: "90vmin",
-                                    maxHeight: "90vmin",
+                                    maxWidth: "500px",
                                 }}
                             >
                                 <Map
@@ -74,13 +69,13 @@ export default function MapMenu() {
                                 />
                             </Box>
                         </Grid>
-                    </Box>
-                    <Grid item xs="auto">
+                    </Grid>
+                    <Grid item xs={12} md={7}>
                         <Box
                             sx={{
-                                width: "808px",
-                                maxWidth: "90vmin",
-                                maxHeight: "90vmin",
+                                width: "100%",
+                                maxWidth: "808px",
+                                margin: "0 auto",
                             }}
                         >
                             <Pyramid town={town} data={data} />

@@ -23,10 +23,13 @@ function Tooltip(props) {
         position: "absolute",
     };
 
+    const tooltipWidth = 360;
+    const windowWidth = typeof window !== 'undefined' ? window.innerWidth : 800;
+
     if (toolCat.gender === "male") {
-        tooltipStyle.left = pos.x + 10;
+        tooltipStyle.left = Math.min(pos.x + 10, windowWidth - tooltipWidth - 20);
     } else {
-        tooltipStyle.left = pos.x - 370;
+        tooltipStyle.left = Math.max(pos.x - tooltipWidth - 10, 10);
     }
 
     if (
@@ -54,7 +57,7 @@ function Tooltip(props) {
     if (toolCat.gender === "both") {
         return (
             <div style={tooltipStyle}>
-                <Card sx={{ width: 360 }}>
+                <Card sx={{ maxWidth: 360 }}>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
                             {`${
@@ -76,7 +79,7 @@ function Tooltip(props) {
 
     return (
         <div style={tooltipStyle}>
-            <Card sx={{ width: 360 }}>
+            <Card sx={{ maxWidth: 360 }}>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
                         {`${toolCat.gender === "male" ? "男性: " : "女性: "}${
