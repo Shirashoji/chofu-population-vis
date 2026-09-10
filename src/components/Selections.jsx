@@ -19,7 +19,6 @@ export default function Selections(props) {
     } else {
         return (
             <div>
-                <br />
                 <Autocomplete
                     value={value}
                     onChange={(event, newValue) => {

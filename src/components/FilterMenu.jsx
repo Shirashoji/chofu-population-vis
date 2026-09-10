@@ -29,7 +29,8 @@ export default function FilterMenu() {
             <Box
                 sx={{
                     width: "100%",
-                    p: 2,
+                    px: { xs: 1, sm: 2 },
+                    py: { xs: 1, sm: 1 },
                     overflowX: "hidden",
                 }}
             >
@@ -59,8 +60,12 @@ export default function FilterMenu() {
                         <Box
                             sx={{
                                 width: "100%",
-                                maxWidth: "800px",
+                                maxWidth: { xs: "100%", md: "min(800px, calc((100vh - 100px) / 0.9))" },
+                                maxHeight: { xs: "none", md: "calc(100vh - 100px)" },
                                 margin: "0 auto",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
                             }}
                         >
                             <Pyramid town={town} data={data} />

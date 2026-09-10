@@ -32,7 +32,8 @@ export default function MapMenu() {
             <Box
                 sx={{
                     width: "100%",
-                    p: 2,
+                    px: { xs: 1, sm: 2 },
+                    py: { xs: 1, sm: 1 },
                     overflowX: "hidden",
                 }}
             >
@@ -59,8 +60,9 @@ export default function MapMenu() {
                             <Box
                                 sx={{
                                     width: "100%",
-                                    pt: 2,
-                                    maxWidth: "500px",
+                                    pt: 1,
+                                    maxWidth: { xs: "100%", md: "min(500px, calc((100vh - 180px) / 0.9))" },
+                                    maxHeight: { xs: "none", md: "calc(100vh - 180px)" },
                                 }}
                             >
                                 <Map
@@ -75,8 +77,12 @@ export default function MapMenu() {
                         <Box
                             sx={{
                                 width: "100%",
-                                maxWidth: "808px",
+                                maxWidth: { xs: "100%", md: "min(808px, calc((100vh - 100px) / 0.9))" },
+                                maxHeight: { xs: "none", md: "calc(100vh - 100px)" },
                                 margin: "0 auto",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
                             }}
                         >
                             <Pyramid town={town} data={data} />

@@ -314,6 +314,9 @@ export default function Pyramid(props) {
                 width="100%"
                 viewBox={`0 0 ${displayWidth} ${displayHeight}`}
                 style={{
+                    maxHeight: "calc(100vh - 100px)",
+                    display: "block",
+                    margin: "0 auto",
                     userSelect: "none",
                 }}
             >
@@ -352,6 +355,9 @@ function HumanNotFound(props) {
                 width="100%"
                 viewBox={`0 0 ${displayWidth} ${displayHeight}`}
                 style={{
+                    maxHeight: "calc(100vh - 100px)",
+                    display: "block",
+                    margin: "0 auto",
                     background: "white",
                     userSelect: "none",
                 }}
