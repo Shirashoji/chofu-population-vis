@@ -136,7 +136,7 @@ export default function Map(props) {
 
   return (
     <div className="Map">
-      <svg width="100%" height="100%" viewBox={`0 0 ${width} ${height}`}>
+      <svg width="100%" viewBox={`0 0 ${width} ${height}`}>
         <defs>
           <linearGradient id="Gradient" x1="0" x2="1" y1="0" y2="0">
             {Array.from({ length: 101 }, (_, i) => i / 100).map((tick, i) => (

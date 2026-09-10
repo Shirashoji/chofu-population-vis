@@ -32,12 +32,13 @@ export default function MapMenu() {
             <Box
                 sx={{
                     width: "100%",
+                    p: 2,
+                    overflowX: "hidden",
                 }}
             >
                 <Grid
                     container
                     spacing={2}
-                    sx={{ p: 2 }}
                     justifyContent="center"
                     alignItems="center"
                 >

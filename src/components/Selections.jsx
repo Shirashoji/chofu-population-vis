@@ -31,7 +31,7 @@ export default function Selections(props) {
                     }}
                     id={props.label}
                     options={options}
-                    sx={{ width: "100%", maxWidth: 300 }}
+                    sx={{ width: "100%", minWidth: 150, maxWidth: 300 }}
                     renderInput={(params) => (
                         <TextField {...params} label={props.label} />
                     )}
