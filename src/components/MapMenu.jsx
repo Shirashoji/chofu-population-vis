@@ -31,21 +31,19 @@ export default function MapMenu() {
         <div className="App">
             <Box
                 sx={{
-                    width: "100vw",
+                    width: "100%",
+                    px: { xs: 1, sm: 2 },
+                    py: { xs: 1, sm: 1 },
+                    overflowX: "hidden",
                 }}
             >
                 <Grid
                     container
                     spacing={2}
-                    sx={{ p: 2 }}
                     justifyContent="center"
                     alignItems="center"
                 >
-                    <Box
-                        sx={{
-                            width: "500px",
-                        }}
-                    >
+                    <Grid item xs={12} md={5}>
                         <Grid
                             container
                             direction="column"
@@ -61,10 +59,10 @@ export default function MapMenu() {
 
                             <Box
                                 sx={{
-                                    width: "500px",
-                                    pt: 2,
-                                    maxWidth: "90vmin",
-                                    maxHeight: "90vmin",
+                                    width: "100%",
+                                    pt: 1,
+                                    maxWidth: { xs: "100%", md: "min(500px, calc((100vh - 180px) / 0.9))" },
+                                    maxHeight: { xs: "none", md: "calc(100vh - 180px)" },
                                 }}
                             >
                                 <Map
@@ -74,13 +72,17 @@ export default function MapMenu() {
                                 />
                             </Box>
                         </Grid>
-                    </Box>
-                    <Grid item xs="auto">
+                    </Grid>
+                    <Grid item xs={12} md={7}>
                         <Box
                             sx={{
-                                width: "808px",
-                                maxWidth: "90vmin",
-                                maxHeight: "90vmin",
+                                width: "100%",
+                                maxWidth: { xs: "100%", md: "min(808px, calc((100vh - 100px) / 0.9))" },
+                                maxHeight: { xs: "none", md: "calc(100vh - 100px)" },
+                                margin: "0 auto",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
                             }}
                         >
                             <Pyramid town={town} data={data} />

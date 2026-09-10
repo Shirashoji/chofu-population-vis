@@ -7,9 +7,12 @@ function Tooltip(props) {
 
     if (pos === null || info === null) return null;
 
+    const tooltipWidth = 360;
+    const windowWidth = typeof window !== 'undefined' ? window.innerWidth : 800;
+    
     const tooltipStyle = {
         position: "absolute",
-        left: pos.x + 15,
+        left: Math.min(pos.x + 15, windowWidth - tooltipWidth - 20),
         top: pos.y + 15,
     };
 

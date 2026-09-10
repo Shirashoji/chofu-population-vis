@@ -28,18 +28,20 @@ export default function FilterMenu() {
         <div className="App">
             <Box
                 sx={{
-                    width: "100vw",
+                    width: "100%",
+                    px: { xs: 1, sm: 2 },
+                    py: { xs: 1, sm: 1 },
+                    overflowX: "hidden",
                 }}
             >
                 <Grid
                     container
-                    spacing={10}
-                    sx={{ p: 2 }}
+                    spacing={2}
                     justifyContent="center"
                     alignItems="center"
                 >
-                    <Grid item xs="auto">
-                        <Stack spacing={2}>
+                    <Grid item xs={12} md="auto">
+                        <Stack spacing={2} alignItems="center">
                             <Selections
                                 options={years}
                                 value={year}
@@ -54,12 +56,16 @@ export default function FilterMenu() {
                             />
                         </Stack>
                     </Grid>
-                    <Grid item xs="auto">
+                    <Grid item xs={12} md="auto">
                         <Box
                             sx={{
-                                width: "90vw",
-                                maxWidth: "90vmin",
-                                maxHeight: "90vmin",
+                                width: "100%",
+                                maxWidth: { xs: "100%", md: "min(800px, calc((100vh - 100px) / 0.9))" },
+                                maxHeight: { xs: "none", md: "calc(100vh - 100px)" },
+                                margin: "0 auto",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
                             }}
                         >
                             <Pyramid town={town} data={data} />

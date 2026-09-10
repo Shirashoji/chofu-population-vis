@@ -118,7 +118,7 @@ function Navigation(props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box component="main">
+      <Box component="main" sx={{ width: "100%" }}>
         <Toolbar />
         {props.children}
       </Box>

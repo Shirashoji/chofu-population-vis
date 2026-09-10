@@ -19,7 +19,6 @@ export default function Selections(props) {
     } else {
         return (
             <div>
-                <br />
                 <Autocomplete
                     value={value}
                     onChange={(event, newValue) => {
@@ -31,7 +30,7 @@ export default function Selections(props) {
                     }}
                     id={props.label}
                     options={options}
-                    sx={{ width: 300 }}
+                    sx={{ width: "100%", minWidth: 150, maxWidth: 300 }}
                     renderInput={(params) => (
                         <TextField {...params} label={props.label} />
                     )}
